@@ -1,23 +1,4 @@
-case class Coord2D(x:Int,y:Int) {
-    def getx:(Int) ={
-        x
-    } 
-    def gety:(Int) ={
-        y
-    } 
-}
-trait Random{   
-    def nextInt:(Int,Random)
-}
-case class MyRandom(seed: Long) extends Random {
-    def nextInt: (Int, Random) = {
-        val newSeed = (seed * 0x5DEECE66DL + 0xBL) & 0xFFFFFFFFFFFFL
-        val nextRandom = MyRandom(newSeed)
-        val n = (newSeed >>> 16).toInt
-        (n, nextRandom)
-    }
-}
-
+package code
 def randomMove(lstOpenCoords: List[Coord2D], rand: MyRandom):(Coord2D, MyRandom) = {
     val (num,nextr)= rand.nextInt
     val rnum = Math.abs(num)%lstOpenCoords.length 
@@ -32,4 +13,5 @@ def main (args: Array[String]): Unit ={
     println(cf)
     println(ns)
     println(randomMove(List(c1,c2,c3),ns))
+    
 }
