@@ -34,8 +34,6 @@ def renderRow(row, board, openCoords, numCols):String = {
     rowPrefix + cells
 }
 
-
-
 def cellSymb(coord, board, openCoords:):String = {
     if openCoords.contains(coord) {
         "."
@@ -47,3 +45,5 @@ def cellSymb(coord, board, openCoords:):String = {
         }
     }
 }
+
+showBoard(board:Board, openCoords:)
