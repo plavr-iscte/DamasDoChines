@@ -46,4 +46,6 @@ def cellSymb(coord, board, openCoords:):String = {
     }
 }
 
-showBoard(board:Board, openCoords:)
+showBoard(board:Board, openCoords:): Unit = {
+    print(renderBoard(board, openCoords, ))
+}
