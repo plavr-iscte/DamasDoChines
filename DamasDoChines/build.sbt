@@ -5,4 +5,5 @@ ThisBuild / scalaVersion := "3.8.2"
 lazy val root = (project in file("."))
   .settings(
     name := "DamasDoChines"
+    libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.2.0"
   )
