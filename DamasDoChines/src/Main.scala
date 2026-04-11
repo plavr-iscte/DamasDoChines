@@ -99,3 +99,63 @@ def playRandomly(board:Board, r:MyRandom, player:Stone, lstOpenCoords:List[Coord
     }
     
 }
+
+
+
+/*******************PEDRO***********************/
+
+
+
+/* 
+b -> board
+lstOpenCoords -> lista de coordenadas disponíveis
+numRows -> duh
+numCols -> duh
+
+*/
+def renderBoard(board: Board, lstOpenCoords: List[Coord2D], numRows: Int, numCols: Int):String = {
+    val header = getHeader(numCols)
+    val body = getBody(board, lstOpenCoords, numRows, numCols)
+
+    header + "\n" + body
+}
+
+def renderRow(row: Int, board: Board, openCoords: List[Coord2D], numCols: Int):String = {
+    val append =
+        if row < 10 then
+             row.toString + " "
+        else row.toString + " " 
+
+    val cells =
+        (0 until numCols)
+            .map(col => cellSymb(Coord2D(row, col), board, openCoords))
+            .mkString(" ")
+    
+    append + cells
+}
+
+def cellSymb(coord: Coord2D, board: Board, openCoords: List[Coord2D]):String = {
+    if openCoords.contains(coord) then "."
+    else 
+        board.get(coord) match {
+            case Some(Stone.Black)    => "B"
+            case Some(Stone.White)    => "W"
+            case None           => "."
+        }
+}
+
+def columnLabel(col: Int): String = {
+    ('A' + col).toChar.toString
+}
+
+def getHeader(numCols: Int): String = {
+    "   " + (0 until numCols).map(columnLabel).mkString(" ")
+}
+def getBody(board: Board, lstOpenCoords: List[Coord2D], numRows:Int, numCols: Int): String = {
+    (0 until numRows).map(row => renderRow(row, board, lstOpenCoords, numCols)).mkString("\n")
+}
+
+def showBoard(board: Board, openCoords: List[Coord2D], numRows: Int, numCols: Int):Unit = {
+    println(renderBoard(board, openCoords, numRows, numCols))
+}
+
