@@ -1,3 +1,16 @@
+error id: file://<WORKSPACE>/src/Main.scala:Boolean#
+file://<WORKSPACE>/src/Main.scala
+empty definition using pc, found symbol in pc: 
+empty definition using semanticdb
+empty definition using fallback
+non-local guesses:
+	 -scala/collection/parallel/CollectionConverters.Boolean#
+	 -Boolean#
+	 -scala/Predef.Boolean#
+offset: 4993
+uri: file://<WORKSPACE>/src/Main.scala
+text:
+```scala
 package code
 
 import scala.annotation.tailrec
@@ -112,13 +125,29 @@ def initboard(x:Int,y:Int,r:MyRandom): (Board,MyRandom,List[Coord2D])={
 
 
         if c == Coord2D(0,0) then 
-            (c,s)::Nil
+            return (c,s)::Nil
         else if c==c_rem1 || c==c_rem2 then 
-            putStone(c_rem1, c_rem2, new_col, new_lin)
+            return putStone(c_rem1, c_rem2, new_col, new_lin)
         else 
-            (c,s)::putStone(c_rem1, c_rem2, new_col, new_lin)
+            return (c,s)::putStone(c_rem1, c_rem2, new_col, new_lin)
 
+
+
+        /**
+        (lin,col) match {
+            case (0,0) =>
+                if (c==c_rem1 || c==c_rem2) return Nil /// IFs errados c-> Coord2D(lin,col) != c_rem1 or c_rem2
+                else (c,s)::Nil
+            case (0,_) =>
+                if (c == c_rem1 || c==c_rem2) return putStone(c_rem1, c_rem2, col-1,lin-1, !b) /// IFs errados c-> Coord2D(lin,col) != c_rem1 or c_rem2
+                else (c,s) :: putStone(c_rem1, c_rem2, col-1, x-1, !b) 
+            case _ =>
+                if (c == c_rem1 || c==c_rem2) return putStone(c_rem1, c_rem2, col,lin-1, !b)  /// IFs errados c-> Coord2D(lin,col) != c_rem1 or c_rem2
+                else (c,s) :: putStone(c_rem1, c_rem2, col,lin-1, !b) 
+        } 
+        **/
     }
+    //val bd= Board(putStone(c1_rem,c2_rem,y-1,x-1,true).toMap.par) ////changed ".par" e True->true
 
     val openCoords = List(c1_rem, c2_rem)
     val entries = putStone(c1_rem, c2_rem, y-1,x-1).toMap.par
@@ -133,56 +162,55 @@ def initboard(x:Int,y:Int,r:MyRandom): (Board,MyRandom,List[Coord2D])={
       coordTo: Coord2D,
       lstOpenCoords: List[Coord2D]
   ): (Option[Board], List[Coord2D]) = {
-    def validJump: Boolean = {
+    def validJump: Boole@@an = {
       val difx = math.abs(coordTo.x - coordFrom.x)
       val dify = math.abs(coordTo.y - coordFrom.y)
       ((difx == 2) && (dify == 0)) || ((difx == 0) && (dify == 2))
     }
 
-    if board.get(coordFrom).contains(player) && validJump then {
-        val coordMid = Coord2D((coordTo.x + coordFrom.x) / 2, (coordTo.y + coordFrom.y) / 2)
-        if board.get(coordMid).contains(oppositeStone(player)) && lstOpenCoords.contains(coordTo) then {
-            val newB = (board - coordMid - coordFrom) + (coordTo -> player)
-            val newlst = coordMid :: coordFrom :: lstOpenCoords.filterNot(_ == coordTo)
-            (Some(newB), newlst)
-        } else {
-            (None, lstOpenCoords)
-        }
+    if board.get(coordFrom) == player && validJump then {
+      val coordMid = Coord2D((coordTo.x + coordFrom.x) / 2, (coordTo.y + coordFrom.y) / 2)
+      if board.get(coordMid) == oppositeStone(player) && lstOpenCoords.contains(coordTo) then {
+        val newB = (board - coordMid - coordFrom) + (coordTo -> player)
+        val newlst = coordMid :: coordFrom :: lstOpenCoords.filterNot(_ == coordTo)
+        (Some(newB), newlst)
+      } else {
+        (None, lstOpenCoords)
+      }
     } else {
       (None, lstOpenCoords)
     }
   }
 
   def playRandomly(board: Board, r: MyRandom, player: Stone, lstOpenCoords: List[Coord2D], f: (List[Coord2D], MyRandom) => (Coord2D, MyRandom)): (Option[Board], MyRandom, List[Coord2D], Option[Coord2D]) = {
-        if lstOpenCoords.isEmpty then { (None, r, lstOpenCoords, None) }
-        else {
-            val (target, rs) = f(lstOpenCoords, r)
-            val pCoordinates = List(
-                Coord2D(target.x - 2, target.y), Coord2D(target.x + 2, target.y), Coord2D(target.x, target.y - 2), Coord2D(target.x, target.y + 2)
-            )
-            val (fBoard, openCoords) = (pCoordinates foldLeft (None:Option[Board], lstOpenCoords)) {
-                case ((None, _), coordFrom) =>
-                    play(board, player, coordFrom, target, lstOpenCoords)
-                case (acc, _) =>
-                    acc
-            }
-            fBoard match {
-                case Some(newBoard) =>
-                    val (dice, rsN) = rs.nextInt
-                    val rsNn = rsN.asInstanceOf[MyRandom]
-                    val decideToContinue = Math.abs(dice) % 2 == 0
-                    if (decideToContinue) {
-                        val (recBoard, recR, recOpen, recCoord) = playRandomly(newBoard, rsNn, player, openCoords, f)
-                        recBoard match {
-                            case Some(_) => (recBoard, recR, recOpen, recCoord)
-                            case None    => (Some(newBoard), rsNn, openCoords, Some(target))
-                        }
-                    } else {
-                        (Some(newBoard), rsNn, openCoords, Some(target))
+        println("nigro " +lstOpenCoords)
+        val (target, rs) = f(lstOpenCoords, r)
+        val pCoordinates = List(
+            Coord2D(target.x - 2, target.y), Coord2D(target.x + 2, target.y), Coord2D(target.x, target.y - 2), Coord2D(target.x, target.y + 2)
+        )
+        println(target)
+        val (fBoard, openCoords) = (pCoordinates foldLeft (None:Option[Board], lstOpenCoords)) {
+            case ((None, _), coordFrom) =>
+                play(board, player, coordFrom, target, lstOpenCoords)
+            case (acc, _) =>
+                acc
+        }
+        fBoard match {
+            case Some(newBoard) =>
+                val (dice, rsN) = rs.nextInt
+                val rsNn = rsN.asInstanceOf[MyRandom]
+                val decideToContinue = Math.abs(dice) % 2 == 0
+                if (decideToContinue) {
+                    val (recBoard, recR, recOpen, recCoord) = playRandomly(newBoard, rsNn, player, openCoords, f)
+                    recBoard match {
+                        case Some(_) => (recBoard, recR, recOpen, recCoord)
+                        case None    => (Some(newBoard), rsNn, openCoords, Some(target))
                     }
-                case None =>
-                    playRandomly(board, rs, player, lstOpenCoords filter (x => x!=target), f)
-            }
+                } else {
+                    (Some(newBoard), rsNn, openCoords, Some(target))
+                }
+            case None =>
+                (None, rs, lstOpenCoords, None)
         }
     }
 
@@ -241,3 +269,10 @@ def initboard(x:Int,y:Int,r:MyRandom): (Board,MyRandom,List[Coord2D])={
     println(renderBoard(board, openCoords, numRows, numCols))
   }
 }
+
+```
+
+
+#### Short summary: 
+
+empty definition using pc, found symbol in pc: 
