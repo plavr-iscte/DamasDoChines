@@ -1,4 +1,4 @@
 package code
 trait Random{   
-    def nextInt:(Int,Random)
+    def nextInt(i: Int):(Int,Random)
 }
