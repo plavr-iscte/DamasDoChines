@@ -68,7 +68,7 @@ case class GameTick () {
                             state
                         }
                 case "quit" => 
-                    Cli(state).doQuit()
+                    client.doQuit()
                     state
 
                 case "change" =>
@@ -83,7 +83,7 @@ case class GameTick () {
                         state.dimensions
                     )
                 case "undo" => 
-                    Cli(state).doUndo()
+                    client.doUndo()
                     state
                 case None => 
                     println("Invalid command")

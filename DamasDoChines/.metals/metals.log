@@ -4000,3 +4000,13 @@ Apr 27, 2026 6:31:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellat
 WARNING: Unmatched cancel notification for request id 54115
 2026.04.27 18:31:28 INFO  compiling root (1 scala source)[0m
 2026.04.27 18:31:28 INFO  time: compiled root in 0.11s[0m
+2026.04.27 18:33:21 INFO  compiling root (1 scala source)[0m
+2026.04.27 18:33:21 INFO  time: compiled root in 0.28s[0m
+2026.04.27 18:33:28 INFO  compiling root (1 scala source)[0m
+2026.04.27 18:33:28 INFO  time: compiled root in 0.14s[0m
+2026.04.27 18:33:53 INFO  compiling root (1 scala source)[0m
+2026.04.27 18:33:53 INFO  time: compiled root in 0.14s[0m
+2026.04.27 18:33:58 INFO  compiling root (1 scala source)[0m
+2026.04.27 18:33:58 INFO  time: compiled root in 0.13s[0m
+2026.04.27 18:33:58 INFO  compiling root (3 scala sources)[0m
+2026.04.27 18:33:58 INFO  time: compiled root in 0.2s[0m
