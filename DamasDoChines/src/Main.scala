@@ -2,73 +2,80 @@ package code
 
 import scala.annotation.tailrec
 import scala.collection.parallel.CollectionConverters.*
+import scala.io.StdIn
 
-class Main {
+object Main {
 
-  
+	def main(args: Array[String]): Unit = {
 
-  def main(args: Array[String]): Unit = {
-    val numRows = 8
-    val numCols = 8
-    val maxTurns = 40
-    val seed = 0x5DEE6767DL
+		val seed = 0x5DEE6767DL
 
-    val client = Cli()
-    val engine = Engine()
+		val properties = StdIn.readLine("Set Game Properties (usage [cols] [rows] [duration (sec)]): ").split("\\s+")
 
-    val startRandom = MyRandom(seed)
-    val (initialBoard, r1, initialOpenCoords) = engine.initboard(numRows, numCols, startRandom)
-    val allCoords = (for {
-      row <- 0 until numRows
-      col <- 0 until numCols
-    } yield Coord2D(row, col)).toList
+		val turn = 0
 
-    var board = initialBoard
-    var openCoords: List[Coord2D] = initialOpenCoords
-    var player = Stone.White
-    var turn = 0
-    var rand = r1
-    var stalledTurns = 0
-
-    println(s"Starting game on ${numRows}x${numCols}, maxTurns=$maxTurns, seed=$seed")
-    println(s"Initial open coordinates: ${openCoords.mkString(", ")}")
-    client.showBoard(board, openCoords, numRows, numCols)
-
-    while turn <= maxTurns && stalledTurns < 2 do {
-        if openCoords.isEmpty then
-            println(s"Turn $turn - no open coordinates available")
-            stalledTurns = 2
-        else {
-            val (nextBoardOpt, nextRand, nextOpenCoords, movedTo) =
-            engine.playRandomly(board, rand, player, openCoords, engine.randomMove)
-
-            rand = nextRand
-
-            nextBoardOpt match {
-            case Some(nextBoard) =>
-                board = nextBoard
-                openCoords = nextOpenCoords
-                stalledTurns = 0
-                println(s"Turn $turn - $player moved to ${movedTo.get}")
-                client.showBoard(board, openCoords, numRows, numCols)
-            case None =>
-                stalledTurns += 1
-                println(s"Turn $turn - $player has no legal random move")
-            }
-
-            player = engine.oppositeStone(player)
-            turn += 1
-        }
-    }
-
-    println("Game finished.")
-
-  }
-
-  
+		val (colLength, rowLength, duration) = 
+			properties match {
+				case Array(c,r,d) => 
+					try{
+						(c.toInt, r.toInt, d.toInt)
+					} catch {
+						case _: NumberFormatException =>
+							throw new IllegalArgumentException("Invalid properties.")
+					}
+				case Array() => (8,8,1200)
+				case _ => throw new IllegalArgumentException("Invalid properties.")
+			}
 
 
+		val startRandom = MyRandom(seed)
+		val (initialBoard, r1, initialOpenCoords) = Engine.initboard(rowLength, colLength, startRandom)
+		
+		val startTime = System.currentTimeMillis() // Não funcional
+		val endTime = startTime + duration*1000L
 
-  
+		val state = State(
+			initialBoard,
+			Stone.White,
+			initialOpenCoords, 
+			turn, 
+			startRandom,
+			startTime, 
+			endTime,
+			(colLength, rowLength)
+		)
+		
+		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
+
+		GameTick().onTick(state)
+
+
+		
+
+		// call onTick
+
+	}
+
+	
+
+	def getMillis(): Long = {
+		System.currentTimeMillis()
+	}
+
+	def getElapsedTime(state: State): String = {
+		val totalseconds = (getMillis() - state.startTime) / 1000
+		val minutes = totalseconds / 60
+		val seconds = totalseconds % 60
+		minutes + "m:" + seconds + "s"
+	}
+
+	/// Not Functional elements
+
+	
+
+
+
+
+
 
 }

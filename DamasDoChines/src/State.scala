@@ -6,16 +6,29 @@ case class State(
     lstOpenCoords: List[Coord2D],
     turn: Int,
     rand: MyRandom,
+    startTime: Long,
+    duration: Long,
+    dimensions: (Int, Int),
     ) {
   
 
     def hasVictory(): Boolean = {
-        val engine = Engine()
         def moves(coor: Coord2D): List[Coord2D] = List(Coord2D(coor.x+2, coor.y), Coord2D(coor.x-2, coor.y), Coord2D(coor.x, coor.y+2), Coord2D(coor.x, coor.y-2))
 
-        !lstOpenCoords.exists { coor => moves(coor).exists { c => engine.play(board, player, c, coor, lstOpenCoords)._1.nonEmpty } }
+        !lstOpenCoords.exists { 
+            coor => moves(coor).exists { 
+                c => Engine.play(board, player, c, coor, lstOpenCoords)._1.nonEmpty 
+            } 
+        }
     
-    } // Cookei obg (versão de baixo é mid)
+    }
+
+    def hasEnded(curr:Long): Boolean = {
+        curr >= duration
+    }
+
+
+
     /*def hasVictory(): Boolean = {
 
         val engine = Engine()

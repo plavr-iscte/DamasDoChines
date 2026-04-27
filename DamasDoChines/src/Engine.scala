@@ -3,8 +3,7 @@ package code
 import scala.annotation.tailrec
 import scala.collection.parallel.CollectionConverters.*
 
-case class Engine() {
-
+object Engine {
 
 
     def play(board: Board,player: Stone,coordFrom: Coord2D,coordTo: Coord2D,lstOpenCoords: List[Coord2D]): (Option[Board], List[Coord2D]) = {
@@ -28,10 +27,11 @@ case class Engine() {
     }
     }
 
-    def oppositeStone(player: Stone): Stone = player match {
-        case Stone.Black => Stone.White
-        case Stone.White => Stone.Black
-    }
+    def oppositeStone(player: Stone): Stone = 
+        player match {
+            case Stone.Black => Stone.White
+            case Stone.White => Stone.Black
+        }
 
     def initboard(x:Int,y:Int,r:MyRandom): (Board,MyRandom,List[Coord2D])={
         val (x_rem,ry) = r.nextInt(x)
@@ -98,7 +98,7 @@ case class Engine() {
             }
             fBoard match {
                 case Some(newBoard) =>
-                    val (dice, rsN) = rs.nextInt(2)
+                    /*val (dice, rsN) = rs.nextInt(2)
                     val rsNn = rsN.asInstanceOf[MyRandom]
                     if (dice == 0) {
                         val (recBoard, recR, recOpen, recCoord) = playRandomly(newBoard, rsNn, player, openCoords, f)
@@ -108,7 +108,8 @@ case class Engine() {
                         }
                     } else {
                         (Some(newBoard), rsNn, openCoords, Some(target))
-                    }
+                    }*/
+                    (Some(newBoard), rs.asInstanceOf[MyRandom], openCoords, Some(target))
                 case None =>
                     playRandomly(board, rs, player, lstOpenCoords filter (x => x!=target), f)
             }
