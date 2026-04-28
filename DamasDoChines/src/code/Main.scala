@@ -55,9 +55,15 @@ object Main {
 		
 		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
 
-		GameTick().onTick(state)
+		recurGT(state)
 
+
+	}
+
+	def recurGT(state:State): Unit = {
+		GameTick().onTick(state)
 		val nextState = Engine.getNextState(state, Engine.getCommand("'restart' or 'quit'", ""))
+		recurGT(nextState)
 
 	}
 

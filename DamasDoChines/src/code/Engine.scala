@@ -185,7 +185,7 @@ object Engine {
 								newOpen,
 								state.turn,
 								state.rand,
-								Main.getMillis(),
+								state.startTime,
 								state.duration,
 								state.dimensions,
 								Some(state),
@@ -223,7 +223,7 @@ object Engine {
 								newOpen,
 								state.turn,
 								newRand,
-								Main.getMillis(),
+								state.startTime,
 								state.duration,
 								state.dimensions,
 								Some(state),
@@ -242,8 +242,15 @@ object Engine {
 				Main.doQuit()
 				state
 			case "restart" =>
-				
-				state
+				// Restart volta ao inicio original do jogo
+				// através de uma recursão
+				def getFirstState(state: State): State = {
+					if state.oldState == None then
+						state
+					else
+						getFirstState(state.oldState.getOrElse(state))
+				}
+				getFirstState(state)
 			case "change" =>
 				State(
 					state.board,
