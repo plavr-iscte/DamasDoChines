@@ -17,7 +17,14 @@
             "/home/pedro/Dev/DamasDoChines/DamasDoChines/.bloop/root/scala-3.8.2/classes",
             "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.8.2/scala3-library_3-3.8.2.jar",
             "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parallel-collections_3/1.2.0/scala-parallel-collections_3-1.2.0.jar",
-            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.2/scala-library-3.8.2.jar"
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-linux.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-linux.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-fxml/21.0.2/javafx-fxml-21.0.2-linux.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.2/scala-library-3.8.2.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-linux.jar",
+            "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar"
         ],
         "out": "/home/pedro/Dev/DamasDoChines/DamasDoChines/.bloop/root",
         "classesDir": "/home/pedro/Dev/DamasDoChines/DamasDoChines/.bloop/root/scala-3.8.2/test-classes",
@@ -218,6 +225,67 @@
                             "name": "scala-library",
                             "classifier": "sources",
                             "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/3.8.2/scala-library-3.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-graphics",
+                    "version": "21.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-graphics",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2.jar"
+                        },
+                        {
+                            "name": "javafx-graphics",
+                            "classifier": "sources",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-graphics/21.0.2/javafx-graphics-21.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-controls",
+                    "version": "21.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-controls",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2.jar"
+                        },
+                        {
+                            "name": "javafx-controls",
+                            "classifier": "sources",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-sources.jar"
+                        },
+                        {
+                            "name": "javafx-controls",
+                            "classifier": "linux",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-controls/21.0.2/javafx-controls-21.0.2-linux.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.openjfx",
+                    "name": "javafx-base",
+                    "version": "21.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "javafx-base",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2.jar"
+                        },
+                        {
+                            "name": "javafx-base",
+                            "classifier": "sources",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-sources.jar"
+                        },
+                        {
+                            "name": "javafx-base",
+                            "classifier": "linux",
+                            "path": "/home/pedro/.cache/coursier/v1/https/repo1.maven.org/maven2/org/openjfx/javafx-base/21.0.2/javafx-base-21.0.2-linux.jar"
                         }
                     ]
                 }

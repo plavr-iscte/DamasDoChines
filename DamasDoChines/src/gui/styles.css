@@ -1,0 +1,34 @@
+.background_home{
+    -fx-background-color: #8a8a8a;
+}
+
+.grid {
+    -fx-grid-lines-visible: true;
+}
+.dark_square { -fx-background-color: #000000; }
+.light_square { -fx-background-color: #ffffff; }
+
+.dark_stone {
+    -fx-fill: #1b2029;
+    -fx-stroke: #1b2029;
+    -fx-stroke-width: 2;
+    -fx-stroke-type: centered;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 8, 0.0, 2, 2);
+}
+.light_stone {
+    -fx-fill: #f2ebe1;
+    -fx-stroke: #f2ebe1;
+    -fx-stroke-width: 2;
+    -fx-stroke-type: centered;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 8, 0.0, 2, 2);
+}
+
+.highlighted_play{
+    -fx-fill: #00ff25;
+}
+
+.selected_stone{
+    -fx-stroke: #eecf15;
+    -fx-stroke-width: 3;
+}
