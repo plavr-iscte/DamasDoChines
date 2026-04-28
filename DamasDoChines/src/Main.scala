@@ -12,7 +12,7 @@ object Main {
 
 		val properties = StdIn.readLine("Set Game Properties (usage [cols] [rows] [duration (sec)]): ").split("\\s+")
 
-		val turn = 0
+		val turn = 1
 
 		val (colLength, rowLength, duration) = 
 			properties match {
@@ -42,7 +42,8 @@ object Main {
 			startRandom,
 			startTime, 
 			endTime,
-			(colLength, rowLength)
+			(colLength, rowLength),
+			None
 		)
 		
 		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
@@ -57,6 +58,7 @@ object Main {
 	}
 
 	
+	/// Not Functional elements
 
 	def getMillis(): Long = {
 		System.currentTimeMillis()
@@ -69,7 +71,6 @@ object Main {
 		minutes + "m:" + seconds + "s"
 	}
 
-	/// Not Functional elements
 
 	
 

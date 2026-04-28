@@ -14,7 +14,7 @@ case class GameTick () {
 
             //wait for CLI user response
             
-            val nextState = client.getCommand("Choose: 'play' or 'undo' or 'quit'", "") match {
+            val nextState = client.getCommand("Choose: 'play' or 'undo' or 'quit' or 'pr'", "") match {
                 case (coordFrom:Coord2D, coordTo:Coord2D) =>
                     //play condition
                     val (newBoard, newOpen) = Engine.play(
@@ -34,7 +34,8 @@ case class GameTick () {
                                 state.rand,
                                 state.startTime,
                                 state.duration,
-                                state.dimensions
+                                state.dimensions,
+                                Some(state),
                             )
                         case None => 
                             println("Invalid move") 
@@ -55,13 +56,14 @@ case class GameTick () {
                             println("Random move: " + newPos)
                             State(
                                 newBoard,
-                                Engine.oppositeStone(state.player),
+                                state.player,
                                 newOpen,
-                                state.turn+1,
+                                state.turn,
                                 newRand,
                                 state.startTime,
                                 state.duration,
-                                state.dimensions
+                                state.dimensions,
+                                Some(state),
                             )
                         case None =>
                             println("Sem movimentos random")
@@ -80,15 +82,16 @@ case class GameTick () {
                         state.rand,
                         state.startTime,
                         state.duration,
-                        state.dimensions
+                        state.dimensions,
+                        Some(state),
                     )
                 case "undo" => 
-                    client.doUndo()
-                    state
+                    state.oldState.getOrElse(state) // Validação para um possível erro de tipo
                 case None => 
                     println("Invalid command")
                     state
                 case _ => 
+                    println("Not a known command")
                     state
                 
             }

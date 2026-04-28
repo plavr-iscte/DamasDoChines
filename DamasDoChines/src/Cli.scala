@@ -98,9 +98,7 @@ case class Cli(
 	///////////////// COMMANDS /////////////////////////
 
 
-	def doUndo(): Unit = {
-		print("Undoing: ")
-	}
+	
 
 	def doQuit(): Unit = {
 		print("Quitting:\n")

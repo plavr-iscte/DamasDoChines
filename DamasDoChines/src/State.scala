@@ -9,7 +9,7 @@ case class State(
     startTime: Long,
     duration: Long,
     dimensions: (Int, Int),
-    oldState: State,
+    oldState: Option[State],
     ) {
   
 
