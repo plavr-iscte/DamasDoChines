@@ -4146,3 +4146,1231 @@ Apr 28, 2026 11:52:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancella
 WARNING: Unmatched cancel notification for request id 57663
 2026.04.28 11:52:13 INFO  compiling root (1 scala source)[0m
 2026.04.28 11:52:13 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:03:47 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:03:47 INFO  time: compiled root in 0.81s[0m
+2026.04.28 14:04:57 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:04:57 INFO  time: compiled root in 0.43s[0m
+2026.04.28 14:04:57 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:04:58 INFO  time: compiled root in 0.64s[0m
+2026.04.28 14:05:04 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:04 INFO  time: compiled root in 0.24s[0m
+2026.04.28 14:05:07 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:07 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:05:23 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:23 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:05:35 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:35 INFO  time: compiled root in 0.52s[0m
+2026.04.28 14:05:35 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:05:36 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:05:37 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:37 INFO  time: compiled root in 0.27s[0m
+2026.04.28 14:05:43 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:43 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:05:48 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:05:48 INFO  time: compiled root in 0.34s[0m
+2026.04.28 14:05:48 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:05:48 INFO  time: compiled root in 0.24s[0m
+Apr 28, 2026 2:06:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 58205
+2026.04.28 14:06:10 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:06:10 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:06:14 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:06:14 INFO  time: compiled root in 0.15s[0m
+2026.04.28 14:06:17 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:06:17 INFO  time: compiled root in 0.48s[0m
+2026.04.28 14:06:41 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:06:41 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:06:41 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:06:41 INFO  time: compiled root in 0.22s[0m
+2026.04.28 14:06:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:44 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:06:44 INFO  time: compiled root in 0.27s[0m
+2026.04.28 14:06:44 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:06:44 INFO  time: compiled root in 0.47s[0m
+2026.04.28 14:06:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Cli.scala[0m
+2026.04.28 14:06:53 INFO  empty definition using pc, found symbol in pc: java/lang/System#exit(). (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_16-11-03-969.md")[0m
+2026.04.28 14:06:54 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:06:54 INFO  time: compiled root in 0.29s[0m
+2026.04.28 14:07:41 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:07:41 INFO  time: compiled root in 0.39s[0m
+2026.04.28 14:09:06 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:09:06 INFO  time: compiled root in 0.4s[0m
+2026.04.28 14:09:10 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:09:10 INFO  time: compiled root in 0.19s[0m
+2026.04.28 14:09:13 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:09:13 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:09:13 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:09:13 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:09:18 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:09:18 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:09:18 INFO  time: compiled root in 0.35s[0m
+2026.04.28 14:09:18 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:09:18 INFO  time: compiled root in 0.28s[0m
+2026.04.28 14:09:20 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:09:20 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:09:20 INFO  time: compiled root in 0.5s[0m
+2026.04.28 14:09:20 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:09:21 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:09:30 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:09:30 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:09:30 INFO  time: compiled root in 0.35s[0m
+2026.04.28 14:09:56 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:09:56 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:09:56 INFO  time: compiled root in 0.26s[0m
+2026.04.28 14:10:00 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:10:00 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:10:00 INFO  time: compiled root in 0.33s[0m
+2026.04.28 14:10:02 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:10:02 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:10:02 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:10:20 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:10:20 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:10:25 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:10:25 INFO  time: compiled root in 0.19s[0m
+2026.04.28 14:10:29 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:10:29 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:11:03 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala][0m
+2026.04.28 14:11:03 INFO  expected identifier; obtained rbrace (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-28/r_scala-toplevel-mtags_14-11-03-664.md")[0m
+2026.04.28 14:11:03 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:03 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:11:04 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala][0m
+2026.04.28 14:11:04 INFO  expected identifier; obtained rbrace (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-28/r_scala-toplevel-mtags_14-11-04-930.md")[0m
+2026.04.28 14:11:04 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:04 INFO  time: compiled root in 0.1s[0m
+2026.04.28 14:11:12 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:12 INFO  time: compiled root in 70ms[0m
+2026.04.28 14:11:16 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:16 INFO  time: compiled root in 57ms[0m
+2026.04.28 14:11:18 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:18 INFO  time: compiled root in 47ms[0m
+2026.04.28 14:11:22 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:22 INFO  time: compiled root in 61ms[0m
+2026.04.28 14:11:28 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:28 INFO  time: compiled root in 82ms[0m
+2026.04.28 14:11:32 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:32 INFO  time: compiled root in 63ms[0m
+Apr 28, 2026 2:11:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59254
+2026.04.28 14:11:42 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:42 INFO  time: compiled root in 57ms[0m
+2026.04.28 14:11:45 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:45 INFO  time: compiled root in 61ms[0m
+2026.04.28 14:11:47 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:47 INFO  time: compiled root in 45ms[0m
+2026.04.28 14:11:51 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:51 INFO  time: compiled root in 53ms[0m
+2026.04.28 14:11:57 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:57 INFO  time: compiled root in 58ms[0m
+2026.04.28 14:11:59 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:11:59 INFO  time: compiled root in 48ms[0m
+2026.04.28 14:12:07 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:12:07 INFO  time: compiled root in 92ms[0m
+2026.04.28 14:12:21 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:21 INFO  time: compiled root in 73ms[0m
+2026.04.28 14:12:23 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:23 INFO  time: compiled root in 95ms[0m
+2026.04.28 14:12:29 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:29 INFO  time: compiled root in 70ms[0m
+Apr 28, 2026 2:12:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59573
+2026.04.28 14:12:37 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:37 INFO  time: compiled root in 73ms[0m
+2026.04.28 14:12:39 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:39 INFO  time: compiled root in 91ms[0m
+2026.04.28 14:12:40 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:12:40 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:12:47 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:47 INFO  time: compiled root in 96ms[0m
+2026.04.28 14:12:54 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:12:54 INFO  time: compiled root in 87ms[0m
+2026.04.28 14:13:12 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:13:12 INFO  time: compiled root in 91ms[0m
+Apr 28, 2026 2:13:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 59775
+2026.04.28 14:13:14 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:13:14 INFO  time: compiled root in 0.15s[0m
+2026.04.28 14:13:16 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:13:16 INFO  time: compiled root in 79ms[0m
+2026.04.28 14:13:24 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:13:24 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:13:28 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:13:28 INFO  time: compiled root in 0.26s[0m
+2026.04.28 14:16:46 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:16:46 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:16:47 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:16:47 INFO  time: compiled root in 0.43s[0m
+2026.04.28 14:16:50 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:16:50 INFO  time: compiled root in 0.28s[0m
+2026.04.28 14:17:00 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:17:00 INFO  time: compiled root in 0.19s[0m
+2026.04.28 14:17:25 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:17:25 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:17:27 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:17:27 INFO  time: compiled root in 0.31s[0m
+2026.04.28 14:18:16 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:18:16 INFO  time: compiled root in 0.39s[0m
+2026.04.28 14:26:12 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:12 INFO  time: compiled root in 0.12s[0m
+2026.04.28 14:26:15 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:15 INFO  time: compiled root in 73ms[0m
+2026.04.28 14:26:27 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:27 INFO  time: compiled root in 68ms[0m
+2026.04.28 14:26:33 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:33 INFO  time: compiled root in 61ms[0m
+2026.04.28 14:26:40 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:40 INFO  time: compiled root in 59ms[0m
+2026.04.28 14:26:48 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:48 INFO  time: compiled root in 60ms[0m
+2026.04.28 14:26:50 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:26:50 INFO  time: compiled root in 72ms[0m
+2026.04.28 14:29:28 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:29:28 INFO  time: compiled root in 0.18s[0m
+Apr 28, 2026 2:29:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 60922
+2026.04.28 14:31:27 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:27 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:31:31 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:31 INFO  time: compiled root in 60ms[0m
+2026.04.28 14:31:32 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:32 INFO  time: compiled root in 0.33s[0m
+Apr 28, 2026 2:31:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61211
+2026.04.28 14:31:42 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:42 INFO  time: compiled root in 0.28s[0m
+2026.04.28 14:31:53 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:53 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:31:53 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:53 INFO  time: compiled root in 47ms[0m
+2026.04.28 14:31:55 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:55 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:31:58 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:31:58 INFO  time: compiled root in 0.19s[0m
+2026.04.28 14:32:10 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:10 INFO  time: compiled root in 61ms[0m
+2026.04.28 14:32:14 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:14 INFO  time: compiled root in 0.1s[0m
+2026.04.28 14:32:19 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:19 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:32:19 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:20 INFO  time: compiled root in 63ms[0m
+2026.04.28 14:32:23 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:23 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:32:56 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:56 INFO  time: compiled root in 0.11s[0m
+Apr 28, 2026 2:32:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 61641
+2026.04.28 14:32:58 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:32:58 INFO  time: compiled root in 0.31s[0m
+2026.04.28 14:33:04 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:33:04 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:33:32 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:33:32 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:33:32 INFO  time: compiled root in 0.31s[0m
+2026.04.28 14:33:37 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:33:37 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:33:39 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:33:39 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 14:33:39 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:35:23 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:35:23 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:35:26 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:35:26 INFO  time: compiled root in 0.62s[0m
+2026.04.28 14:35:28 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:35:28 INFO  time: compiled root in 0.29s[0m
+2026.04.28 14:35:30 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:35:30 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:35:31 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:35:31 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:36:14 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:36:14 INFO  time: compiled root in 0.38s[0m
+2026.04.28 14:36:43 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:36:43 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:38:05 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:38:05 INFO  time: compiled root in 0.19s[0m
+2026.04.28 14:38:22 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:38:22 INFO  time: compiled root in 78ms[0m
+2026.04.28 14:38:28 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:38:28 INFO  time: compiled root in 66ms[0m
+2026.04.28 14:38:31 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:38:31 INFO  time: compiled root in 97ms[0m
+2026.04.28 14:38:32 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:38:32 INFO  time: compiled root in 64ms[0m
+Apr 28, 2026 2:39:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 62457
+2026.04.28 14:39:10 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:10 INFO  time: compiled root in 0.12s[0m
+2026.04.28 14:39:12 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:12 INFO  time: compiled root in 61ms[0m
+2026.04.28 14:39:14 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:14 INFO  time: compiled root in 58ms[0m
+2026.04.28 14:39:16 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:20 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:20 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:20 INFO  time: compiled root in 71ms[0m
+2026.04.28 14:39:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:23 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:23 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:39:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:25 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:25 INFO  time: compiled root in 80ms[0m
+2026.04.28 14:39:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:27 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:27 INFO  time: compiled root in 68ms[0m
+2026.04.28 14:39:27 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:29 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:29 INFO  time: compiled root in 65ms[0m
+2026.04.28 14:39:30 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:34 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:35 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:39:35 INFO  time: compiled root in 0.22s[0m
+2026.04.28 14:39:35 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:39:37 INFO  time: compiled root in 1.25s[0m
+2026.04.28 14:39:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:39:42 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:39:42 INFO  time: compiled root in 0.83s[0m
+2026.04.28 14:39:46 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:39:46 INFO  time: compiled root in 0.74s[0m
+2026.04.28 14:39:50 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:39:50 INFO  time: compiled root in 0.46s[0m
+2026.04.28 14:40:03 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:03 INFO  time: compiled root in 0.45s[0m
+Apr 28, 2026 2:40:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 62789
+2026.04.28 14:40:03 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:04 INFO  time: compiled root in 0.46s[0m
+2026.04.28 14:40:05 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:05 INFO  time: compiled root in 0.45s[0m
+2026.04.28 14:40:11 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:11 INFO  time: compiled root in 0.5s[0m
+2026.04.28 14:40:16 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:16 INFO  time: compiled root in 0.45s[0m
+2026.04.28 14:40:23 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:23 INFO  time: compiled root in 0.43s[0m
+2026.04.28 14:40:28 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:28 INFO  time: compiled root in 0.44s[0m
+2026.04.28 14:40:31 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:31 INFO  time: compiled root in 0.42s[0m
+2026.04.28 14:40:31 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:31 INFO  time: compiled root in 0.42s[0m
+2026.04.28 14:40:33 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:33 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:40:36 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:36 INFO  time: compiled root in 0.43s[0m
+2026.04.28 14:40:41 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:41 INFO  time: compiled root in 0.26s[0m
+2026.04.28 14:40:44 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:44 INFO  time: compiled root in 0.27s[0m
+2026.04.28 14:40:48 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:40:48 INFO  time: compiled root in 0.43s[0m
+2026.04.28 14:41:01 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:41:01 INFO  time: compiled root in 0.46s[0m
+2026.04.28 14:41:07 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:41:37 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:41:37 INFO  time: compiled root in 0.36s[0m
+2026.04.28 14:41:37 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:41:38 INFO  time: compiled root in 1.24s[0m
+2026.04.28 14:41:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:42 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:41:42 INFO  time: compiled root in 71ms[0m
+2026.04.28 14:41:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala[0m
+2026.04.28 14:41:49 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:41:49 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:42:01 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:01 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:42:06 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:06 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:42:07 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:07 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:42:08 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:08 INFO  time: compiled root in 0.15s[0m
+2026.04.28 14:42:15 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:15 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:42:57 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:42:57 INFO  time: compiled root in 0.13s[0m
+2026.04.28 14:43:00 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:00 INFO  time: compiled root in 0.1s[0m
+2026.04.28 14:43:02 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:02 INFO  time: compiled root in 0.24s[0m
+2026.04.28 14:43:06 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:06 INFO  time: compiled root in 0.27s[0m
+Apr 28, 2026 2:43:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 63792
+2026.04.28 14:43:09 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:09 INFO  time: compiled root in 67ms[0m
+2026.04.28 14:43:11 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:11 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:43:45 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:43:45 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:44:16 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:44:16 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:44:20 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:44:20 INFO  time: compiled root in 0.24s[0m
+2026.04.28 14:46:07 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:07 INFO  time: compiled root in 0.29s[0m
+2026.04.28 14:46:11 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:11 INFO  time: compiled root in 0.12s[0m
+2026.04.28 14:46:13 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:13 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:46:19 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:19 INFO  time: compiled root in 35ms[0m
+2026.04.28 14:46:25 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:25 INFO  time: compiled root in 36ms[0m
+2026.04.28 14:46:27 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:27 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:46:29 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:29 INFO  time: compiled root in 0.15s[0m
+2026.04.28 14:46:33 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:33 INFO  time: compiled root in 0.1s[0m
+2026.04.28 14:46:38 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:38 INFO  time: compiled root in 34ms[0m
+2026.04.28 14:46:40 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:40 INFO  time: compiled root in 34ms[0m
+2026.04.28 14:46:48 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:48 INFO  time: compiled root in 33ms[0m
+2026.04.28 14:46:53 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:46:53 INFO  time: compiled root in 38ms[0m
+2026.04.28 14:47:04 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:04 INFO  time: compiled root in 37ms[0m
+2026.04.28 14:47:07 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:07 INFO  time: compiled root in 39ms[0m
+2026.04.28 14:47:09 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:09 INFO  time: compiled root in 31ms[0m
+2026.04.28 14:47:17 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:17 INFO  time: compiled root in 38ms[0m
+2026.04.28 14:47:21 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:21 INFO  time: compiled root in 35ms[0m
+2026.04.28 14:47:28 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:28 INFO  time: compiled root in 33ms[0m
+Apr 28, 2026 2:47:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 64564
+2026.04.28 14:47:41 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:41 INFO  time: compiled root in 36ms[0m
+2026.04.28 14:47:43 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:43 INFO  time: compiled root in 35ms[0m
+2026.04.28 14:47:48 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:48 INFO  time: compiled root in 35ms[0m
+2026.04.28 14:47:48 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:48 INFO  time: compiled root in 80ms[0m
+2026.04.28 14:47:51 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:51 INFO  time: compiled root in 38ms[0m
+2026.04.28 14:47:55 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:47:55 INFO  time: compiled root in 46ms[0m
+2026.04.28 14:48:05 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:05 INFO  time: compiled root in 34ms[0m
+2026.04.28 14:48:09 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:09 INFO  time: compiled root in 38ms[0m
+2026.04.28 14:48:14 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:14 INFO  time: compiled root in 38ms[0m
+2026.04.28 14:48:16 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:16 INFO  time: compiled root in 36ms[0m
+2026.04.28 14:48:20 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:20 INFO  time: compiled root in 36ms[0m
+2026.04.28 14:48:27 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:27 INFO  time: compiled root in 40ms[0m
+2026.04.28 14:48:29 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:29 INFO  time: compiled root in 37ms[0m
+2026.04.28 14:48:33 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:33 INFO  time: compiled root in 71ms[0m
+2026.04.28 14:48:37 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:37 INFO  time: compiled root in 40ms[0m
+2026.04.28 14:48:41 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:41 INFO  time: compiled root in 39ms[0m
+2026.04.28 14:48:44 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:44 INFO  time: compiled root in 45ms[0m
+2026.04.28 14:48:50 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:50 INFO  time: compiled root in 36ms[0m
+2026.04.28 14:48:54 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:48:54 INFO  time: compiled root in 44ms[0m
+2026.04.28 14:49:06 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:06 INFO  time: compiled root in 40ms[0m
+2026.04.28 14:49:11 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:11 INFO  time: compiled root in 47ms[0m
+2026.04.28 14:49:13 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:13 INFO  time: compiled root in 42ms[0m
+2026.04.28 14:49:18 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:18 INFO  time: compiled root in 44ms[0m
+2026.04.28 14:49:24 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:24 INFO  time: compiled root in 43ms[0m
+2026.04.28 14:49:28 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:28 INFO  time: compiled root in 37ms[0m
+2026.04.28 14:49:36 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:36 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:49:36 INFO  compiling root (1 scala source)[0m
+2026.04.28 14:49:36 INFO  time: compiled root in 0.64s[0m
+2026.04.28 14:49:56 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:49:56 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:50:02 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:02 INFO  time: compiled root in 0.3s[0m
+2026.04.28 14:50:15 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:15 INFO  time: compiled root in 0.28s[0m
+Apr 28, 2026 2:50:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 65573
+2026.04.28 14:50:17 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:17 INFO  time: compiled root in 0.27s[0m
+2026.04.28 14:50:18 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:18 INFO  time: compiled root in 0.46s[0m
+2026.04.28 14:50:24 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:24 INFO  time: compiled root in 0.26s[0m
+2026.04.28 14:50:28 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:28 INFO  time: compiled root in 0.33s[0m
+2026.04.28 14:50:39 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:39 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:50:40 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:40 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:50:45 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:45 INFO  time: compiled root in 59ms[0m
+2026.04.28 14:50:46 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:50:46 INFO  time: compiled root in 0.22s[0m
+2026.04.28 14:50:46 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:50:48 INFO  time: compiled root in 1.09s[0m
+2026.04.28 14:51:01 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:01 INFO  time: compiled root in 0.18s[0m
+2026.04.28 14:51:01 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:01 INFO  time: compiled root in 0.67s[0m
+2026.04.28 14:51:06 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/Score.scala][0m
+2026.04.28 14:51:06 INFO  expected identifier; obtained eof (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-28/r_scala-toplevel-mtags_14-51-06-452.md")[0m
+2026.04.28 14:51:06 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:06 INFO  time: compiled root in 56ms[0m
+2026.04.28 14:51:13 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:13 INFO  time: compiled root in 55ms[0m
+2026.04.28 14:51:16 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:16 INFO  time: compiled root in 66ms[0m
+2026.04.28 14:51:22 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:22 INFO  time: compiled root in 56ms[0m
+2026.04.28 14:51:27 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:27 INFO  time: compiled root in 0.22s[0m
+2026.04.28 14:51:38 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:38 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:51:38 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:39 INFO  time: compiled root in 1.16s[0m
+2026.04.28 14:51:44 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:44 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:51:44 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:44 INFO  time: compiled root in 0.66s[0m
+2026.04.28 14:51:47 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:47 INFO  time: compiled root in 0.31s[0m
+2026.04.28 14:51:47 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:48 INFO  time: compiled root in 0.69s[0m
+2026.04.28 14:51:50 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:50 INFO  time: compiled root in 0.15s[0m
+2026.04.28 14:51:50 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:51 INFO  time: compiled root in 1.29s[0m
+2026.04.28 14:51:51 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:51 INFO  time: compiled root in 0.1s[0m
+2026.04.28 14:51:57 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:57 INFO  time: compiled root in 65ms[0m
+2026.04.28 14:51:59 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:51:59 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:51:59 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:51:59 INFO  time: compiled root in 0.69s[0m
+2026.04.28 14:52:01 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:01 INFO  time: compiled root in 51ms[0m
+2026.04.28 14:52:08 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:08 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:52:08 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:08 INFO  time: compiled root in 0.66s[0m
+2026.04.28 14:52:11 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:11 INFO  time: compiled root in 63ms[0m
+2026.04.28 14:52:14 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:14 INFO  time: compiled root in 51ms[0m
+2026.04.28 14:52:17 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:17 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:52:17 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:17 INFO  time: compiled root in 0.66s[0m
+Apr 28, 2026 2:52:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 66384
+2026.04.28 14:52:26 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:26 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:52:26 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:26 INFO  time: compiled root in 0.66s[0m
+2026.04.28 14:52:32 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:32 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:52:32 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:32 INFO  time: compiled root in 0.73s[0m
+2026.04.28 14:52:44 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:44 INFO  time: compiled root in 74ms[0m
+2026.04.28 14:52:46 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:46 INFO  time: compiled root in 0.2s[0m
+2026.04.28 14:52:49 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:49 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:52:49 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:49 INFO  time: compiled root in 0.7s[0m
+2026.04.28 14:52:52 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:52 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:52:54 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:54 INFO  time: compiled root in 46ms[0m
+2026.04.28 14:52:58 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:52:58 INFO  time: compiled root in 0.21s[0m
+2026.04.28 14:52:58 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:52:58 INFO  time: compiled root in 0.66s[0m
+2026.04.28 14:53:04 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:53:04 INFO  time: compiled root in 0.16s[0m
+2026.04.28 14:53:04 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:04 INFO  time: compiled root in 0.64s[0m
+2026.04.28 14:53:08 INFO  compiling root (2 scala sources)[0m
+2026.04.28 14:53:08 INFO  time: compiled root in 0.17s[0m
+2026.04.28 14:53:08 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:08 INFO  time: compiled root in 0.66s[0m
+2026.04.28 14:53:20 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:20 INFO  time: compiled root in 0.52s[0m
+2026.04.28 14:53:26 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:26 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:53:33 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:33 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:53:46 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:46 INFO  time: compiled root in 0.49s[0m
+2026.04.28 14:53:51 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:53:51 INFO  time: compiled root in 0.47s[0m
+2026.04.28 14:54:00 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:00 INFO  time: compiled root in 0.48s[0m
+2026.04.28 14:54:04 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:04 INFO  time: compiled root in 0.61s[0m
+2026.04.28 14:54:08 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:09 INFO  time: compiled root in 1.17s[0m
+2026.04.28 14:54:10 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:10 INFO  time: compiled root in 0.63s[0m
+2026.04.28 14:54:14 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:14 INFO  time: compiled root in 0.48s[0m
+2026.04.28 14:54:22 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:22 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:54:24 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:24 INFO  time: compiled root in 0.52s[0m
+2026.04.28 14:54:33 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:33 INFO  time: compiled root in 0.49s[0m
+2026.04.28 14:54:37 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:37 INFO  time: compiled root in 0.47s[0m
+2026.04.28 14:54:40 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:40 INFO  time: compiled root in 0.6s[0m
+Apr 28, 2026 2:54:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67359
+2026.04.28 14:54:48 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:54:48 INFO  time: compiled root in 0.48s[0m
+2026.04.28 14:55:04 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:04 INFO  time: compiled root in 0.51s[0m
+2026.04.28 14:55:04 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:04 INFO  time: compiled root in 0.5s[0m
+2026.04.28 14:55:14 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:14 INFO  time: compiled root in 0.62s[0m
+2026.04.28 14:55:23 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:23 INFO  time: compiled root in 0.61s[0m
+2026.04.28 14:55:25 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:25 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:55:27 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:28 INFO  time: compiled root in 1.18s[0m
+2026.04.28 14:55:33 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:33 INFO  time: compiled root in 0.64s[0m
+2026.04.28 14:55:33 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:33 INFO  time: compiled root in 0.64s[0m
+2026.04.28 14:55:37 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:37 INFO  time: compiled root in 0.6s[0m
+2026.04.28 14:55:51 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:55:51 INFO  time: compiled root in 0.59s[0m
+2026.04.28 14:56:08 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:08 INFO  time: compiled root in 0.63s[0m
+Apr 28, 2026 2:56:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 67778
+2026.04.28 14:56:13 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:13 INFO  time: compiled root in 0.56s[0m
+2026.04.28 14:56:16 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:16 INFO  time: compiled root in 0.68s[0m
+2026.04.28 14:56:21 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:21 INFO  time: compiled root in 0.78s[0m
+2026.04.28 14:56:26 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:26 INFO  time: compiled root in 0.74s[0m
+2026.04.28 14:56:35 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:35 INFO  time: compiled root in 0.72s[0m
+2026.04.28 14:56:45 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:45 INFO  time: compiled root in 0.55s[0m
+2026.04.28 14:56:48 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:48 INFO  time: compiled root in 0.81s[0m
+2026.04.28 14:56:50 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:50 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:56:50 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:56:50 INFO  time: compiled root in 0.93s[0m
+Apr 28, 2026 2:56:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 68057
+2026.04.28 14:56:55 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:56:55 INFO  time: compiled root in 0.6s[0m
+2026.04.28 14:57:00 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:00 INFO  time: compiled root in 0.59s[0m
+2026.04.28 14:57:08 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:08 INFO  time: compiled root in 0.67s[0m
+2026.04.28 14:57:10 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:10 INFO  time: compiled root in 0.61s[0m
+2026.04.28 14:57:16 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:16 INFO  time: compiled root in 0.55s[0m
+2026.04.28 14:57:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:18 INFO  time: compiled root in 0.54s[0m
+2026.04.28 14:57:46 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:57:46 INFO  time: compiled root in 0.57s[0m
+2026.04.28 14:58:35 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:58:36 INFO  time: compiled root in 1.07s[0m
+2026.04.28 14:58:43 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:58:43 INFO  time: compiled root in 0.23s[0m
+2026.04.28 14:58:48 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:58:48 WARN  Could not find 'Stone' using presentation compiler nor semanticdb. Trying to guess the definition using available information from local class context. [0m
+2026.04.28 14:58:48 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:58:48 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:58:49 WARN  Could not find 'Score' using presentation compiler nor semanticdb. Trying to guess the definition using available information from local class context. [0m
+2026.04.28 14:58:49 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-27/r_empty-definition_(root)_17-02-11-051.md")[0m
+2026.04.28 14:58:52 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:58:52 INFO  time: compiled root in 0.7s[0m
+2026.04.28 14:58:56 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:58:56 INFO  time: compiled root in 0.88s[0m
+2026.04.28 14:59:00 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:00 INFO  time: compiled root in 0.58s[0m
+2026.04.28 14:59:07 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:07 INFO  time: compiled root in 0.55s[0m
+2026.04.28 14:59:09 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:09 INFO  time: compiled root in 0.57s[0m
+2026.04.28 14:59:15 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:15 INFO  time: compiled root in 0.58s[0m
+2026.04.28 14:59:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:18 INFO  time: compiled root in 0.6s[0m
+2026.04.28 14:59:21 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:21 INFO  time: compiled root in 0.57s[0m
+2026.04.28 14:59:44 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:44 INFO  time: compiled root in 91ms[0m
+2026.04.28 14:59:55 INFO  compiling root (3 scala sources)[0m
+2026.04.28 14:59:55 INFO  time: compiled root in 98ms[0m
+2026.04.28 15:00:10 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:10 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:00:15 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:15 INFO  time: compiled root in 0.35s[0m
+2026.04.28 15:00:16 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:16 INFO  time: compiled root in 0.29s[0m
+2026.04.28 15:00:16 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:16 INFO  time: compiled root in 0.21s[0m
+2026.04.28 15:00:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:18 INFO  time: compiled root in 0.18s[0m
+2026.04.28 15:00:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:00:18 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:01:23 INFO  compiling root (4 scala sources)[0m
+Apr 28, 2026 3:01:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69113
+2026.04.28 15:01:23 INFO  time: compiled root in 0.51s[0m
+2026.04.28 15:01:23 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:01:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:23 INFO  time: compiled root in 0.2s[0m
+2026.04.28 15:01:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:24 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala][0m
+2026.04.28 15:01:24 INFO  expected identifier; obtained rbrace (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-28/r_scala-toplevel-mtags_15-01-24-877.md")[0m
+2026.04.28 15:01:24 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:01:24 INFO  time: compiled root in 0.22s[0m
+2026.04.28 15:01:25 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:01:49 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:01:49 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:01:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:27 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:31 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:33 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:33 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:34 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:02:34 INFO  time: compiled root in 0.22s[0m
+2026.04.28 15:02:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:02:43 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:02:43 INFO  time: compiled root in 0.42s[0m
+2026.04.28 15:02:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:03 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:04 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:04 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:04 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:03:05 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:37 WARN  Could not find 'Engine' using presentation compiler nor semanticdb. Trying to guess the definition using available information from local class context. [0m
+2026.04.28 15:03:37 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/src/State.scala][0m
+2026.04.28 15:03:37 INFO  empty definition using pc, found symbol in pc: code/Engine. (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-28/r_empty-definition_(root)_15-03-37-474.md")[0m
+2026.04.28 15:03:39 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:39 INFO  time: compiled root in 0.51s[0m
+2026.04.28 15:03:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:41 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:41 INFO  time: compiled root in 0.53s[0m
+2026.04.28 15:03:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:43 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:43 INFO  time: compiled root in 0.35s[0m
+2026.04.28 15:03:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:48 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:48 INFO  time: compiled root in 0.29s[0m
+2026.04.28 15:03:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:52 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:52 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:03:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:57 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:03:58 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:03:58 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:03:59 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:00 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:00 INFO  time: compiled root in 0.15s[0m
+2026.04.28 15:04:01 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:01 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:02 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:02 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:02 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:04:03 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:03 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:04 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:05 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:05 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:04:06 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:07 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:08 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:08 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:04:08 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:09 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:09 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:10 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:10 INFO  time: compiled root in 0.1s[0m
+2026.04.28 15:04:11 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:13 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+Apr 28, 2026 3:04:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69654
+2026.04.28 15:04:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:19 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:20 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:20 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:22 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:22 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:04:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:25 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:25 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:27 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:28 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:28 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:04:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:31 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:32 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:32 INFO  time: compiled root in 0.24s[0m
+2026.04.28 15:04:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:34 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:35 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:35 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:04:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:36 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:36 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:38 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:36 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:36 INFO  time: compiled root in 0.36s[0m
+2026.04.28 15:04:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:43 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:50 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:53 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:53 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:04:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:57 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:57 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:04:57 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:04:58 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:04:58 INFO  time: compiled root in 0.28s[0m
+2026.04.28 15:04:59 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:05:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:05:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:05:38 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:05:38 INFO  time: compiled root in 0.49s[0m
+2026.04.28 15:05:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:31 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:33 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:34 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:36 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:36 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:06:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:38 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:38 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:38 INFO  time: compiled root in 0.22s[0m
+2026.04.28 15:06:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:40 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:40 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:06:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:43 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:43 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:06:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:45 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:48 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:48 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:06:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:50 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:51 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:51 INFO  time: compiled root in 0.36s[0m
+2026.04.28 15:06:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:54 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:54 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:55 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:55 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:06:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:57 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:06:57 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:06:57 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:06:59 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:00 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:00 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:07:00 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:08 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:11 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:12 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:12 INFO  time: compiled root in 0.24s[0m
+2026.04.28 15:07:13 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:13 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:14 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:15 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:15 INFO  time: compiled root in 0.24s[0m
+2026.04.28 15:07:15 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:16 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:16 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:07:17 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:19 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:20 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:20 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:07:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:22 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:22 INFO  time: compiled root in 0.24s[0m
+2026.04.28 15:07:20 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:22 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:24 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:24 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:07:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:30 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:30 INFO  time: compiled root in 0.14s[0m
+2026.04.28 15:07:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:33 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:33 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:07:33 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+Apr 28, 2026 3:07:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 70811
+2026.04.28 15:07:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:36 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:38 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:38 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:07:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:41 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:41 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:07:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:47 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:47 INFO  time: compiled root in 0.14s[0m
+2026.04.28 15:07:48 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:49 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:51 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:53 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:54 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:54 INFO  time: compiled root in 0.24s[0m
+2026.04.28 15:07:54 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:57 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:07:57 INFO  time: compiled root in 0.29s[0m
+2026.04.28 15:07:58 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:58 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:07:59 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:00 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:00 INFO  time: compiled root in 0.44s[0m
+2026.04.28 15:08:00 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:08:00 INFO  time: compiled root in 0.22s[0m
+2026.04.28 15:08:01 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:10 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:16 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:16 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:08:17 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:20 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:20 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:08:20 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:33 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:33 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:08:34 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:37 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:37 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:08:38 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:40 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:40 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:08:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:53 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:53 INFO  time: compiled root in 0.28s[0m
+2026.04.28 15:08:53 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:08:53 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:08:54 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:08:56 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:08:56 INFO  time: compiled root in 0.2s[0m
+2026.04.28 15:08:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:06 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:09:06 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:09:06 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:09:06 INFO  time: compiled root in 95ms[0m
+2026.04.28 15:09:06 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:36 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala][0m
+2026.04.28 15:09:36 INFO  expected identifier; obtained lparen (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-28/r_scala-toplevel-mtags_15-09-36-265.md")[0m
+2026.04.28 15:09:36 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:09:36 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:09:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:37 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:09:37 INFO  time: compiled root in 0.3s[0m
+2026.04.28 15:09:37 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:09:37 INFO  time: compiled root in 0.15s[0m
+2026.04.28 15:09:38 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:47 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:09:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:17 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:22 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:22 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:10:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:27 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:27 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:10:27 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:30 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:31 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:31 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:10:31 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:31 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:35 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:36 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:36 INFO  time: compiled root in 0.41s[0m
+2026.04.28 15:10:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:38 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:37 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+Apr 28, 2026 3:10:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71759
+2026.04.28 15:10:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:40 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:40 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:10:41 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:44 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:45 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:45 INFO  time: compiled root in 0.14s[0m
+2026.04.28 15:10:46 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:57 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:10:57 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:10:57 INFO  time: compiled root in 0.2s[0m
+2026.04.28 15:10:58 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:17 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:18 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:11:18 INFO  time: compiled root in 0.37s[0m
+2026.04.28 15:11:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:11:18 INFO  time: compiled root in 0.21s[0m
+2026.04.28 15:11:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:25 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:11:25 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:11:25 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:11:25 INFO  time: compiled root in 0.1s[0m
+2026.04.28 15:11:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+Apr 28, 2026 3:11:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 71914
+Apr 28, 2026 3:11:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72039
+2026.04.28 15:11:50 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:11:50 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:11:50 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:11:52 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:11:52 INFO  time: compiled root in 0.14s[0m
+2026.04.28 15:11:52 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:17 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:12:17 INFO  time: compiled root in 0.39s[0m
+2026.04.28 15:12:17 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:12:17 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:12:18 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:21 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:23 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:24 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:25 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:26 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:28 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:29 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:29 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:30 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:31 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:12:31 INFO  time: compiled root in 0.28s[0m
+2026.04.28 15:12:31 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:12:31 INFO  time: compiled root in 0.18s[0m
+2026.04.28 15:12:32 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:39 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:40 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:55 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:56 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:12:56 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:12:56 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:12:56 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:12:56 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:12:57 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:13:00 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:13:01 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:13:01 INFO  time: compiled root in 0.26s[0m
+2026.04.28 15:13:01 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:13:01 INFO  time: compiled root in 0.1s[0m
+2026.04.28 15:13:02 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:13:19 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:13:42 WARN  Could not load snapshot text for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Engine.scala[0m
+2026.04.28 15:13:51 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:13:51 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:14:11 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:11 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:14:18 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:18 INFO  time: compiled root in 0.36s[0m
+2026.04.28 15:14:18 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:14:18 INFO  time: compiled root in 0.21s[0m
+2026.04.28 15:14:28 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:28 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:14:29 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:29 INFO  time: compiled root in 0.34s[0m
+2026.04.28 15:14:29 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:14:29 INFO  time: compiled root in 0.13s[0m
+2026.04.28 15:14:34 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:34 INFO  time: compiled root in 0.14s[0m
+2026.04.28 15:14:37 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:37 INFO  time: compiled root in 0.31s[0m
+2026.04.28 15:14:37 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:14:37 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:14:43 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:43 INFO  time: compiled root in 0.25s[0m
+2026.04.28 15:14:43 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:14:43 INFO  time: compiled root in 0.11s[0m
+2026.04.28 15:14:47 INFO  compiling root (4 scala sources)[0m
+2026.04.28 15:14:47 INFO  time: compiled root in 0.4s[0m
+2026.04.28 15:14:47 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:14:47 INFO  time: compiled root in 0.23s[0m
+2026.04.28 15:15:06 INFO  compiling root (5 scala sources)[0m
+2026.04.28 15:15:06 INFO  time: compiled root in 0.12s[0m
+2026.04.28 15:15:11 INFO  compiling root (5 scala sources)[0m
+2026.04.28 15:15:11 INFO  time: compiled root in 0.1s[0m
+2026.04.28 15:15:14 INFO  compiling root (5 scala sources)[0m
+2026.04.28 15:15:14 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 15:15:14 INFO  time: compiled root in 0.27s[0m
+2026.04.28 15:15:14 INFO  compiling root (3 scala sources)[0m
+2026.04.28 15:15:14 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 15:15:14 INFO  time: compiled root in 0.21s[0m
+2026.04.28 15:15:18 INFO  compiling root (1 scala source)[0m
+2026.04.28 15:15:18 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.28 15:15:18 INFO  time: compiled root in 0.2s[0m

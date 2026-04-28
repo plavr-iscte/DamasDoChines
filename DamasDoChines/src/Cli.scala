@@ -28,16 +28,16 @@ case class Cli(
 	}
 
 	def cellSymb(coord: Coord2D, board: Board, openCoords: List[Coord2D]): String =
-	if openCoords.contains(coord) then "."
+	if openCoords.contains(coord) then Console.RED + "." + Console.RESET
 	else
 		board.get(coord) match {
-		case Some(Stone.Black) => "B"
+		case Some(Stone.Black) => Console.BLACK + "B" + Console.RESET
 		case Some(Stone.White) => "W"
-		case None              => "."
+		case None              => Console.RED + "." + Console.RESET
 		}
 
 	def columnLabel(col: Int): String =
-		('A' + col).toChar.toString
+		('0' + col).toChar.toString
 
 	def getHeader(numCols: Int): String = {
 		def labels(col: Int): String =
@@ -65,47 +65,6 @@ case class Cli(
 		println(renderBoard(board, openCoords, numRows, numCols))
 	}
 
-	// get commands
-	//// undo
-	//// start game requires> col row turns ...
-	//// 
-
-	def getCommand(prompt: String, command: String): Any = {
-		val result = 
-			if command.nonEmpty then
-				command.split("\\s+").toList
-			else
-				StdIn.readLine(prompt + ": ").split("\\s+").toList
-
-		result match {
-			case "undo" :: Nil | "quit" :: Nil | "change"::Nil | "pr"::Nil  => result.head
-			case "play" :: colFrom :: rowFrom :: colTo :: rowTo :: Nil =>
-				(stringToCoord(colFrom.toString, rowFrom.toString), stringToCoord(colTo.toString, rowTo.toString))
-			case _ => None
-		}
-
-	}
-
-	def stringToCoord(s1: String, s2: String): Coord2D = {
-		try {
-			Coord2D(s1.toInt, s2.toInt)
-		} catch {
-			case _: NumberFormatException =>
-				throw new IllegalArgumentException(s"Not a valid input")
-		}
-	}
-
-	///////////////// COMMANDS /////////////////////////
 
 
-	
-
-	def doQuit(): Unit = {
-		print("Quitting:\n")
-		System.exit(0) //////// Verificar se é funcional
-	}
-
-	def doChangeTurn(): Unit = {
-		print("Swapping Turns: ")
-	}
 }

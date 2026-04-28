@@ -10,14 +10,14 @@ case class State(
     duration: Long,
     dimensions: (Int, Int),
     oldState: Option[State],
+    score: Score,
     ) {
   
 
     def hasVictory(): Boolean = {
-        def moves(coor: Coord2D): List[Coord2D] = List(Coord2D(coor.x+2, coor.y), Coord2D(coor.x-2, coor.y), Coord2D(coor.x, coor.y+2), Coord2D(coor.x, coor.y-2))
-
+        
         !lstOpenCoords.exists { 
-            coor => moves(coor).exists { 
+            coor => Engine.moves(coor).exists { 
                 c => Engine.play(board, player, c, coor, lstOpenCoords)._1.nonEmpty 
             } 
         }
@@ -27,7 +27,6 @@ case class State(
     def hasEnded(curr:Long): Boolean = {
         curr >= duration
     }
-
 
 
     /*def hasVictory(): Boolean = {
@@ -50,7 +49,10 @@ case class State(
 
     }*/
 
-    
+
+    def hasEndCondition(millis: Long): Boolean = {
+        hasVictory() || hasEnded(millis)
+    }
 
 
 }

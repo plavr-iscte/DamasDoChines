@@ -43,7 +43,8 @@ object Main {
 			startTime, 
 			endTime,
 			(colLength, rowLength),
-			None
+			None,
+			Score(0,0),
 		)
 		
 		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
@@ -71,6 +72,10 @@ object Main {
 		minutes + "m:" + seconds + "s"
 	}
 
+	def doQuit(): Unit = {
+		println(Console.YELLOW + "Quitting!" + Console.RESET)
+		System.exit(0) //////// não é funcional
+	}
 
 	
 
