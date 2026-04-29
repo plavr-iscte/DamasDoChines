@@ -1,6 +1,5 @@
 package code.code
 
-import scala.io.StdIn
 import scala.annotation.switch
 
 import scala.util.Try
@@ -65,7 +64,7 @@ case class Cli(
 	}
 
 	def showBoard(board: Board, openCoords: List[Coord2D], numRows: Int, numCols: Int): Unit = {
-		println(renderBoard(board, openCoords, numRows, numCols))
+		Main.output(renderBoard(board, openCoords, numRows, numCols))
 	}
 
 

@@ -9127,3 +9127,165 @@ WARNING: Unmatched cancel notification for request id 86601
 2026.04.28 17:37:00 INFO  time: compiled root in 0.26s[0m
 2026.04.28 17:37:10 INFO  compiling root (1 scala source)[0m
 2026.04.28 17:37:10 INFO  time: compiled root in 0.23s[0m
+Apr 29, 2026 4:43:16 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.04.29 17:04:11 INFO  Started: Metals version 1.6.7 in folders '/home/pedro/Dev/DamasDoChines/DamasDoChines' for client Visual Studio Code 1.116.0.[0m
+2026.04.29 17:04:11 INFO  Memory monitor started[0m
+2026.04.29 17:04:12 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.04.29 17:04:12 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Engine.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.29 17:04:12 INFO  Attempting to connect to the build server...[0m
+2026.04.29 17:04:12 INFO  No running Bloop server found, starting one.[0m
+2026.04.29 17:04:13 INFO  Starting compilation server[0m
+2026.04.29 17:04:14 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Engine.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.29 17:04:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/bsp.trace.json or /home/pedro/.cache/metals/bsp.trace.json[0m
+2026.04.29 17:04:15 INFO  Attempting to connect to the build server...[0m
+2026.04.29 17:04:15 INFO  Found a Bloop server running[0m
+2026.04.29 17:04:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pedro/Dev/DamasDoChines/DamasDoChines/project/.metals/bsp.trace.json or /home/pedro/.cache/metals/bsp.trace.json[0m
+2026.04.29 17:04:15 INFO  time: Connected to build server in 3.22s[0m
+2026.04.29 17:04:15 INFO  Connected to Build server: Bloop v2.0.19[0m
+2026.04.29 17:04:16 INFO  time: Imported build in 0.1s[0m
+2026.04.29 17:04:18 WARN  Could not find java sources in /usr/lib/jvm/src.zip, /usr/lib/jvm/lib/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/src.zip, /usr/lib/jvm/java-21-openjdk-amd64/lib/src.zip. Java symbols will not be available.[0m
+2026.04.29 17:04:18 INFO  time: indexed workspace in 2.97s[0m
+2026.04.29 17:04:31 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:04:34 INFO  time: compiled root in 2.77s[0m
+2026.04.29 17:04:41 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:04:41 INFO  time: compiled root in 0.72s[0m
+2026.04.29 17:04:50 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Engine.scala][0m
+2026.04.29 17:04:50 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-04-50-447.md")[0m
+2026.04.29 17:04:51 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:04:51 INFO  time: compiled root in 0.61s[0m
+2026.04.29 17:04:55 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:04:55 INFO  time: compiled root in 0.38s[0m
+2026.04.29 17:04:57 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:04:57 INFO  time: compiled root in 0.81s[0m
+2026.04.29 17:05:00 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:05:00 INFO  time: compiled root in 0.48s[0m
+2026.04.29 17:05:05 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Main.scala][0m
+2026.04.29 17:05:05 INFO  expected identifier; obtained rbrace (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-29/r_scala-toplevel-mtags_17-05-05-190.md")[0m
+2026.04.29 17:05:05 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:05 INFO  time: compiled root in 0.42s[0m
+2026.04.29 17:05:24 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:24 INFO  time: compiled root in 0.29s[0m
+2026.04.29 17:05:29 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:29 INFO  time: compiled root in 0.54s[0m
+2026.04.29 17:05:33 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:33 INFO  time: compiled root in 0.41s[0m
+2026.04.29 17:05:38 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:38 INFO  time: compiled root in 0.41s[0m
+2026.04.29 17:05:40 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:40 INFO  time: compiled root in 0.3s[0m
+2026.04.29 17:05:54 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:54 INFO  time: compiled root in 0.35s[0m
+2026.04.29 17:05:57 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:05:57 INFO  time: compiled root in 0.54s[0m
+2026.04.29 17:06:02 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:02 INFO  time: compiled root in 0.33s[0m
+Apr 29, 2026 5:06:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 545
+2026.04.29 17:06:10 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:10 INFO  time: compiled root in 0.19s[0m
+2026.04.29 17:06:12 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:12 INFO  time: compiled root in 0.17s[0m
+2026.04.29 17:06:13 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Engine.scala][0m
+2026.04.29 17:06:13 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-06-13-072.md")[0m
+2026.04.29 17:06:13 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-06-13-072.md")[0m
+2026.04.29 17:06:25 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:25 INFO  time: compiled root in 0.29s[0m
+2026.04.29 17:06:27 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Engine.scala][0m
+2026.04.29 17:06:27 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-06-27-814.md")[0m
+2026.04.29 17:06:28 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-06-27-814.md")[0m
+2026.04.29 17:06:28 INFO  empty definition using pc, found symbol in pc:  (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals-full/2026-04-29/r_empty-definition_(root)_17-06-27-814.md")[0m
+2026.04.29 17:06:31 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:31 INFO  time: compiled root in 0.25s[0m
+2026.04.29 17:06:39 INFO  compiling root (2 scala sources)[0m
+2026.04.29 17:06:39 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:06:39 INFO  time: compiled root in 0.76s[0m
+2026.04.29 17:06:43 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:43 INFO  time: compiled root in 0.47s[0m
+2026.04.29 17:06:44 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:44 INFO  time: compiled root in 0.51s[0m
+Apr 29, 2026 5:06:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 825
+2026.04.29 17:06:49 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:49 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:06:49 INFO  time: compiled root in 0.26s[0m
+2026.04.29 17:06:52 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:52 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:06:52 INFO  time: compiled root in 0.24s[0m
+2026.04.29 17:06:55 INFO  Created report: Optional[file:///home/pedro/Dev/DamasDoChines/DamasDoChines/file:/home/pedro/Dev/DamasDoChines/DamasDoChines/src/code/Main.scala][0m
+2026.04.29 17:06:55 INFO  expected identifier; obtained def (full report at: "/home/pedro/Dev/DamasDoChines/DamasDoChines/.metals/.reports/metals/2026-04-29/r_scala-toplevel-mtags_17-06-55-361.md")[0m
+2026.04.29 17:06:55 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:55 INFO  time: compiled root in 0.11s[0m
+2026.04.29 17:06:59 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:06:59 INFO  time: compiled root in 97ms[0m
+2026.04.29 17:07:00 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:00 INFO  time: compiled root in 0.12s[0m
+2026.04.29 17:07:10 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:10 INFO  time: compiled root in 0.11s[0m
+2026.04.29 17:07:13 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:13 INFO  time: compiled root in 0.1s[0m
+2026.04.29 17:07:15 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:15 INFO  time: compiled root in 0.28s[0m
+2026.04.29 17:07:16 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:16 INFO  time: compiled root in 0.51s[0m
+2026.04.29 17:07:22 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:22 INFO  time: compiled root in 0.25s[0m
+2026.04.29 17:07:25 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:25 INFO  time: compiled root in 0.22s[0m
+2026.04.29 17:07:27 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:27 INFO  time: compiled root in 0.22s[0m
+2026.04.29 17:07:35 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:35 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:07:35 INFO  time: compiled root in 0.25s[0m
+2026.04.29 17:07:50 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:50 INFO  time: compiled root in 0.36s[0m
+2026.04.29 17:07:52 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:52 INFO  time: compiled root in 0.33s[0m
+2026.04.29 17:07:54 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:54 INFO  time: compiled root in 0.29s[0m
+2026.04.29 17:07:59 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:07:59 INFO  time: compiled root in 0.29s[0m
+2026.04.29 17:08:02 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:02 INFO  time: compiled root in 0.3s[0m
+2026.04.29 17:08:05 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:05 INFO  time: compiled root in 0.29s[0m
+2026.04.29 17:08:08 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:08 INFO  time: compiled root in 0.3s[0m
+2026.04.29 17:08:12 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:12 INFO  time: compiled root in 0.26s[0m
+2026.04.29 17:08:15 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:15 INFO  time: compiled root in 0.17s[0m
+2026.04.29 17:08:23 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:23 INFO  time: compiled root in 0.19s[0m
+2026.04.29 17:08:28 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:28 INFO  time: compiled root in 0.17s[0m
+Apr 29, 2026 5:08:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1476
+2026.04.29 17:08:35 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:35 INFO  time: compiled root in 0.23s[0m
+2026.04.29 17:08:52 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:52 INFO  time: compiled root in 0.39s[0m
+2026.04.29 17:08:54 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:08:54 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:08:54 INFO  time: compiled root in 0.23s[0m
+2026.04.29 17:09:19 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:09:19 INFO  time: compiled root in 0.17s[0m
+2026.04.29 17:10:05 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:10:05 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:10:05 INFO  time: compiled root in 0.41s[0m
+2026.04.29 17:10:09 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:10:09 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:10:09 INFO  time: compiled root in 0.21s[0m
+2026.04.29 17:10:13 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:10:13 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:10:13 INFO  time: compiled root in 0.24s[0m
+2026.04.29 17:10:30 INFO  compiling root (4 scala sources)[0m
+2026.04.29 17:10:30 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:10:30 INFO  time: compiled root in 0.43s[0m
+2026.04.29 17:10:46 INFO  compiling root (1 scala source)[0m
+2026.04.29 17:10:46 WARN  there was 1 deprecation warning; re-run with -deprecation for details[0m
+2026.04.29 17:10:46 INFO  time: compiled root in 0.2s[0m
+Apr 29, 2026 5:10:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1951
+Apr 29, 2026 5:11:19 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

@@ -36,7 +36,7 @@ object Main {
 		val startRandom = MyRandom(seed)
 		val (initialBoard, r1, initialOpenCoords) = Engine.initboard(rowLength, colLength, startRandom)
 		
-		val startTime = System.currentTimeMillis() // Não funcional
+		val startTime = getMillis() // Não funcional
 		val endTime = startTime + duration*1000L
 
 		val state = State(
@@ -82,11 +82,19 @@ object Main {
 	}
 
 	def doQuit(): Unit = {
-		println(Console.YELLOW + "Quitting!" + Console.RESET)
+		output(Console.YELLOW + "Quitting!" + Console.RESET)
 		System.exit(0) //////// não é funcional
 	}
 
+
+	def output(s: String): Unit = {
+		println(s)
+	}
+
 	
+	def readInput(s: String): String = {
+		StdIn.readLine(s)
+	} 
 
 
 

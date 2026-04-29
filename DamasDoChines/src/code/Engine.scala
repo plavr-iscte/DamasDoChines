@@ -2,7 +2,6 @@ package code.code
 
 import scala.annotation.tailrec
 import scala.collection.parallel.CollectionConverters._
-import scala.io.StdIn
 
 object Engine {
 
@@ -129,7 +128,7 @@ object Engine {
 			if command.nonEmpty then
 				command.split("\\s+").toList
 			else
-				StdIn.readLine(prompt + ": ").split("\\s+").toList
+				Main.readInput(prompt + ": ").split("\\s+").toList
 
 		result match {
 			case "undo" :: Nil | "quit" :: Nil | "change"::Nil | "pr"::Nil | "restart"::Nil  => result.head
@@ -193,11 +192,11 @@ object Engine {
 								Some(coordTo)
 							)
 						case None => 
-							println(Console.RED + "Invalid move" + Console.RESET) 
+							Main.output(Console.RED + "Invalid move" + Console.RESET) 
 							state
 					}
 				else 
-					println(Console.RED + "Invalid Play" + Console.RESET)
+					Main.output(Console.RED + "Invalid Play" + Console.RESET)
 					state
 
 			case "pr" =>
@@ -216,7 +215,7 @@ object Engine {
 				if state.coordPos == newPos || !state.coordPos.isDefined then
 					newBoard match {
 						case Some(newBoard) =>
-							println("Random move: " + newPos)
+							Main.output("Random move: " + newPos)
 							State(
 								newBoard,
 								state.player,
@@ -232,11 +231,11 @@ object Engine {
 								
 							)
 						case None =>
-							println("Sem movimentos random")
+							Main.output("Sem movimentos random")
 							state
 						}
 				else 
-					println(Console.RED + "Invalid Play" + Console.RESET)
+					Main.output(Console.RED + "Invalid Play" + Console.RESET)
 					state
 			case "quit" => 
 				Main.doQuit()
@@ -268,10 +267,10 @@ object Engine {
 			case "undo" => 
 				state.oldState.getOrElse(state) // Validação para um possível erro de tipo
 			case None => 
-				println(Console.RED + "Invalid command" + Console.RESET)
+				Main.output(Console.RED + "Invalid command" + Console.RESET)
 				state
 			case _ => 
-				println(Console.RED + "Not a known command" + Console.RESET)
+				Main.output(Console.RED + "Not a known command" + Console.RESET)
 				state
 			
 		}
