@@ -23,11 +23,13 @@ case class GameTick () {
             val nextState = Engine.getNextState(state, getCommand("Choose: 'play' or 'undo' or 'quit' or 'pr'", ""))
             
             onTick(nextState)
+        } else {
+            Main.output(Main.getTitle(state))
         }
+
 
     }
 
 
 }
-
 

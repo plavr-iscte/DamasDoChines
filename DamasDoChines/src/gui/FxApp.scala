@@ -16,7 +16,6 @@ class HelloWorld extends Application {
   }
 }
 
-// ESTE É O TEU NOVO MAIN PARA A GUI
 object FxApp {
   def main(args: Array[String]): Unit = {
     Application.launch(classOf[HelloWorld], args*)

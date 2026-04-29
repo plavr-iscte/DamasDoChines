@@ -22,39 +22,34 @@ case class State(
   
 
     def hasVictory(): Boolean = {
-        
-        !lstOpenCoords.exists { 
+        !hasMovesForPlayer(Stone.White) && !hasMovesForPlayer(Stone.Black)
+    }
+
+    def hasMovesForPlayer(player: Stone): Boolean = {
+        lstOpenCoords.exists { 
             coor => Engine.moves(coor).exists { 
                 c => Engine.play(board, player, c, coor, lstOpenCoords)._1.nonEmpty 
             } 
         }
-    
     }
 
     def hasEnded(curr:Long): Boolean = {
         curr >= duration
     }
 
-
-    /*def hasVictory(): Boolean = {
-
-        val engine = Engine()
-
-        def checkPlay(coor: Coord2D): Boolean = {
-        val nList = List(Coord2D(coor.x+2, coor.y), Coord2D(coor.x-2, coor.y), Coord2D(coor.x, coor.y+2), Coord2D(coor.x, coor.y-2))
-        
-        val playList = nList.map(c => engine.play(board, player, c, coor, lstOpenCoords)._1).filterNot(_ == None)
-
-        playList.isEmpty
+    def getWinner(): Option[Stone] = {
+        val wMoves = hasMovesForPlayer(Stone.White)
+        val bMoves = hasMovesForPlayer(Stone.Black)
 
 
-        }
-
-        val plays = lstOpenCoords.map(c => checkPlay(c)).filterNot(_ == true)
-
-        plays.isEmpty
-
-    }*/
+        if(!wMoves && !bMoves) then
+            if this.score.black > this.score.white then
+                Some(Stone.Black)
+            else if this.score.white > this.score.black then
+                Some(Stone.White)
+            else None
+        else None
+    }
 
 
     def hasEndCondition(millis: Long): Boolean = {

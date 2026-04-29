@@ -55,30 +55,51 @@ object Main {
 		
 		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
 
-		recurGT(state)
+		GameTick().onTick(state)
 
 
 	}
 
-	def recurGT(state:State): Unit = {
-		GameTick().onTick(state)
+	def recurGT(state: State): Unit = {
 		val nextState = Engine.getNextState(state, Engine.getCommand("'restart' or 'quit'", ""))
 		recurGT(nextState)
-
 	}
 
+	def getTitle(state: State): String = {
+		val instant = getMillis()
+		if(!state.hasEndCondition(instant)) then
+			val t = "turno: " + state.turn
+			val pl= "player: " + state.player
+			val cp = "Coord: " + state.coordPos
+			val sc = "Brancas: " + state.score.white + " | Pretas: " + state.score.black
+			t+ "\t" + pl + "\t" + cp + "\n" + sc
+		else if state.hasEnded(instant) then
+			"Esgotou o tempo: " + getElapsedTime(state)
+		else
+			state.getWinner() match {
+				case Some(Stone.White) => "Vencedor: Brancas"
+				case Some(Stone.Black) => "Vendecor: Pretas"
+				case None => "Empate"
+			}
+	}
 	
 	/// Elementos não funcionais
+
 
 	def getMillis(): Long = {
 		System.currentTimeMillis()
 	}
 
 	def getElapsedTime(state: State): String = {
-		val totalseconds = (getMillis() - state.startTime) / 1000
+		val (minutes, seconds) = timeConversion(state.startTime)
+		minutes + "m:" + seconds + "s"
+	}
+
+	def timeConversion(l: Long): (Long, Long) = {
+		val totalseconds = (getMillis() - l) / 1000
 		val minutes = totalseconds / 60
 		val seconds = totalseconds % 60
-		minutes + "m:" + seconds + "s"
+		(minutes, seconds)
 	}
 
 	def doQuit(): Unit = {

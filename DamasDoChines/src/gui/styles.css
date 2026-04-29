@@ -1,6 +1,11 @@
 .background_home{
     -fx-background-color: #8a8a8a;
 }
+.buttons{
+    -fx-border-radius: 20;
+    -fx-background-color: #1b2029;
+    -fx-background-radius: 20;
+}
 
 .grid {
     -fx-grid-lines-visible: true;
