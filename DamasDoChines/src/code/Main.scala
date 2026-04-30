@@ -73,14 +73,13 @@ object Main {
 			val cp = "Coord: " + state.coordPos
 			val sc = "Brancas: " + state.score.white + " | Pretas: " + state.score.black
 			t+ "\t" + pl + "\t" + cp + "\n" + sc
-		else if state.hasEnded(instant) then
-			"Esgotou o tempo: " + getElapsedTime(state)
-		else
-			state.getWinner() match {
-				case Some(Stone.White) => "Vencedor: Brancas"
-				case Some(Stone.Black) => "Vendecor: Pretas"
-				case None => "Empate"
+		else if state.hasVictory() then
+			state.player match {
+				case Stone.White => "Vencedor: Brancas"
+				case Stone.Black => "Vencedor: Pretas"
 			}
+		else 
+			"Esgotou o tempo: " + getElapsedTime(state)
 	}
 	
 	/// Elementos não funcionais

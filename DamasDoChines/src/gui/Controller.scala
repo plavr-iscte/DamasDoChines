@@ -164,7 +164,11 @@ class Controller {
 				event.consume()
 			})
 
-			square.setOnDragDropped(event => {
+			square.setOnDragDropped(event => {				
+				if(gameState.hasEndCondition(getMillis())) {
+					event.consume()
+				}
+
 				square.getStyleClass.remove("highlighted_play")
 				val db = event.getDragboard()
 
@@ -175,6 +179,10 @@ class Controller {
 					val originCol = coords(1).toInt
 					val coordFrom = Coord2D(originRow, originCol)
 					val coordTo = Coord2D(row, col)
+
+					if (!gameState.board.get(coordFrom).contains(gameState.player)) {
+						event.consume()
+					}
 
 					val pColor = gameState.board.get(coordFrom)
 

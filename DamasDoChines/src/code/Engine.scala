@@ -17,7 +17,7 @@ object Engine {
 			val coordMid = Coord2D((coordTo.x + coordFrom.x) / 2, (coordTo.y + coordFrom.y) / 2)
 			if board.get(coordMid).contains(oppositeStone(player)) && lstOpenCoords.contains(coordTo) then {
 				val newB = (board - coordMid - coordFrom) + (coordTo -> player)
-				val newlst = coordMid :: coordFrom :: lstOpenCoords.filterNot(_ == coordTo)
+				val newlst = coordMid :: coordFrom :: lstOpenCoords.filterNot(_ == coordTo).distinct
 				(Some(newB), newlst)
 			} else {
 				(None, lstOpenCoords)
@@ -303,7 +303,6 @@ object Engine {
 				else
 					Main.output(Console.RED + "Invalid Play" + Console.RESET)
 					state
-
 
 
 			case "pr" =>

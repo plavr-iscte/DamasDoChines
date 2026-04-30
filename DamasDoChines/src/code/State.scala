@@ -22,7 +22,7 @@ case class State(
   
 
     def hasVictory(): Boolean = {
-        !hasMovesForPlayer(Stone.White) && !hasMovesForPlayer(Stone.Black)
+        !hasMovesForPlayer(Stone.White) && coordPos==None
     }
 
     def hasMovesForPlayer(player: Stone): Boolean = {
@@ -35,20 +35,6 @@ case class State(
 
     def hasEnded(curr:Long): Boolean = {
         curr >= duration
-    }
-
-    def getWinner(): Option[Stone] = {
-        val wMoves = hasMovesForPlayer(Stone.White)
-        val bMoves = hasMovesForPlayer(Stone.Black)
-
-
-        if(!wMoves && !bMoves) then
-            if this.score.black > this.score.white then
-                Some(Stone.Black)
-            else if this.score.white > this.score.black then
-                Some(Stone.White)
-            else None
-        else None
     }
 
 
