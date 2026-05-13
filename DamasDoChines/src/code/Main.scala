@@ -13,7 +13,7 @@ object Main {
 
 	def main(args: Array[String]): Unit = {
 
-		val seed = 0x5DEE6767DL
+		val seed = getMillis()
 
 		val properties = StdIn.readLine("Set Game Properties (usage [cols] [rows] [duration (sec)]): ").split("\\s+")
 
@@ -51,6 +51,7 @@ object Main {
 			None,
 			Score(0,0),
 			None,
+			Stone.Black
 		)
 		
 		//Cli(state).showBoard(initialBoard, initialOpenCoords, rowLength, colLength)
@@ -75,15 +76,15 @@ object Main {
 			t+ "\t" + pl + "\t" + cp + "\n" + sc
 		else if state.hasVictory() then
 			state.player match {
-				case Stone.White => "Vencedor: Brancas"
-				case Stone.Black => "Vencedor: Pretas"
+				case Stone.White => "Vencedor: Pretas"
+				case Stone.Black => "Vencedor: Brancas"
 			}
 		else 
 			"Esgotou o tempo: " + getElapsedTime(state)
 	}
 	
-	/// Elementos não funcionais
 
+	/// Elementos não funcionais
 
 	def getMillis(): Long = {
 		System.currentTimeMillis()
@@ -116,9 +117,9 @@ object Main {
 		StdIn.readLine(s)
 	} 
 
-
-
-
+	def timeout(time: Int): Unit = {
+		Thread.sleep(time*1000L) // para que a joga da do computador não seja quase instantanea
+	}
 
 
 }

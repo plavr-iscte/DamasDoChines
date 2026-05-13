@@ -3,6 +3,8 @@ package code.code
 import scala.annotation.tailrec
 import scala.collection.parallel.CollectionConverters._
 
+import gui.Controller
+
 object Engine {
 
 
@@ -128,6 +130,7 @@ object Engine {
         
       
 	}*/
+
 	def playRandomly(
 		board: Board,
 		r: MyRandom,
@@ -186,7 +189,6 @@ object Engine {
 		(lstOpenCoords(rnum), nextR.asInstanceOf[MyRandom])
 	}
 
-
 	def getCommand(prompt: String, command: String): Any = {
 		val result = 
 			(if command.nonEmpty then command else Main.readInput(prompt + ": "))
@@ -228,36 +230,25 @@ object Engine {
 		if moves(from).exists(to => play(state.board, state.player, from, to, state.lstOpenCoords)._1.nonEmpty)
 		then
 			State(
-				state.board,
-				state.player,
+				state.board, state.player,
 				state.lstOpenCoords,
-				state.turn,
-				state.rand,
-				state.startTime,
-				state.duration,
-				state.dimensions,
-				Some(state),
-				state.score,
-				Some(from)
+				state.turn, state.rand,
+				state.startTime, state.duration,
+				state.dimensions, Some(state),
+				state.score, Some(from), state.botStone
 			)
 		else
 			State(
-				state.board,
-				Engine.oppositeStone(state.player),
-				state.lstOpenCoords,
-				state.turn+1,
-				state.rand,
-				Main.getMillis(),
-				state.duration,
-				state.dimensions,
-				Some(state),
-				state.score,
-				None,
+				state.board, Engine.oppositeStone(state.player),
+				state.lstOpenCoords, state.turn+1,
+				state.rand, Main.getMillis(),
+				state.duration, state.dimensions,
+				Some(state), state.score, None,
+				state.botStone
 			)
 	}
 
 	def getNextState(state: State, comm: Any): State = {
-
 		comm match {
 			case (coordFrom:Coord2D, coordTo:Coord2D) =>
 				if state.coordPos.contains(coordFrom) || state.coordPos.isEmpty then
@@ -282,19 +273,14 @@ object Engine {
 							}
 
 							val movedState = State(
-								newBoard,
-								state.player,
-								newOpen,
-								state.turn,
-								state.rand,
-								state.startTime,
-								state.duration,
-								state.dimensions,
-								Some(state),
-								scorer,
-								Some(coordTo)
+								newBoard, state.player, newOpen,
+								state.turn, state.rand, state.startTime,
+								state.duration, state.dimensions,
+								Some(state), scorer, Some(coordTo),
+								state.botStone
 							)
-							canContinue(movedState, coordTo)
+							
+							canContinue(movedState, coordTo) 
 						
 						case None =>
 							Main.output(Console.RED + "Invalid move" + Console.RESET)
@@ -305,7 +291,7 @@ object Engine {
 					state
 
 
-			case "pr" =>
+			case "pr" => 
 				val scorer = state.player match {
 					case Stone.Black => Score(state.score.black + 1, state.score.white)
 					case Stone.White => Score(state.score.black, state.score.white + 1)
@@ -320,7 +306,6 @@ object Engine {
 						state.coordPos,
 						Engine.randomMove
 					)
-
 				
 				(newBoard, newPos) match {
 					case (Some(nb), Some(np)) =>
@@ -329,7 +314,7 @@ object Engine {
 							nb, state.player, newOpen,
 							state.turn, newRand, state.startTime,
 							state.duration, state.dimensions,
-							Some(state), scorer, Some(np)
+							Some(state), scorer, Some(np), state.botStone
 						)
 						canContinue(movedState, np)
 
@@ -339,7 +324,7 @@ object Engine {
 							nb, Engine.oppositeStone(state.player),
 							newOpen, state.turn+1, newRand,
 							Main.getMillis(), state.duration, state.dimensions,
-							Some(state), state.score, None
+							Some(state), state.score, None, state.botStone
 						)
 					
 					case (None, _) =>
@@ -348,16 +333,16 @@ object Engine {
 							state.board, Engine.oppositeStone(state.player),
 							state.lstOpenCoords, state.turn + 1,
 							newRand, Main.getMillis(), state.duration,
-							state.dimensions, Some(state), state.score, None
+							state.dimensions, Some(state), state.score, 
+							None, state.botStone
 						)
 								
 				}			
-			
+
 
 			case "quit" => 
 				Main.doQuit()
 				state
-
 
 
 			case "restart" =>
@@ -372,15 +357,13 @@ object Engine {
 				getFirstState(state)
 
 
-
 			case "change" =>
 				State(
 					state.board, Engine.oppositeStone(state.player),
 					state.lstOpenCoords, state.turn+1, state.rand,
 					Main.getMillis(), state.duration, state.dimensions,
-					Some(state), state.score, None,
+					Some(state), state.score, None, state.botStone
 				)
-
 
 
 			case "undo" => 

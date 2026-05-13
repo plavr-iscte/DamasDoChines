@@ -18,11 +18,12 @@ case class State(
     oldState: Option[State],
     score: Score,
     coordPos: Option[Coord2D],
+    botStone: Stone,
     ) {
   
 
     def hasVictory(): Boolean = {
-        !hasMovesForPlayer(Stone.White) && coordPos==None
+        !hasMovesForPlayer(player) && coordPos.isEmpty
     }
 
     def hasMovesForPlayer(player: Stone): Boolean = {

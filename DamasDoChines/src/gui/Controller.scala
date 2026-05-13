@@ -22,6 +22,9 @@ import javafx.event.{ActionEvent, EventHandler}
 import javafx.scene.control.Button
 import javafx.scene.control.Label
 
+import javafx.animation.PauseTransition
+import javafx.util.Duration
+
 
 class Controller {
 	@FXML private var tabuleiro: GridPane = _
@@ -36,7 +39,7 @@ class Controller {
 	private var selectedCoord: Option[Coord2D] = None
 
 	def initialize(): Unit = {
-		val rand = MyRandom(0x5DEE6767DL)
+		val rand = MyRandom(Main.getMillis())
 		val start = getMillis()
 		val(initialBoard, r, lstopen) = initboard(6, 6, rand)
 		gameState = State(
@@ -50,7 +53,8 @@ class Controller {
 			(6, 6),
 			None,
 			Score(0, 0),
-			None
+			None,
+			Stone.Black,
 		)
 		l_id.setText(Main.getTitle(gameState))
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
@@ -192,6 +196,9 @@ class Controller {
 						floatingStone.foreach(stone => tabuleiro.getChildren.remove(stone))
 
 						changeGUI(gameState.board)
+						if (gameState.player == gameState.botStone && !gameState.hasEndCondition(getMillis())) {
+							chainRandomPlayWithDelay()
+						}
 					}
 				}
 				event.consume()
@@ -237,10 +244,26 @@ class Controller {
 	}
 
 
-
 	def getSquare(row: Int, col: Int): StackPane = {
 		tabuleiro.getChildren.asScala.collectFirst {
 			case s: StackPane if GridPane.getRowIndex(s) == row && GridPane.getColumnIndex(s) == col => s
 		}.orNull
+	}
+
+	def chainRandomPlayWithDelay(): Unit = {
+		if (gameState.player != gameState.botStone) return
+
+		val delay = new PauseTransition(Duration.seconds(1))
+		delay.setOnFinished(_ => {
+			gameState = getNextState(gameState, "pr") // Não funcional
+			changeGUI(gameState.board)
+
+			if (
+				gameState.coordPos.isDefined &&
+				gameState.coordPos.isDefined &&
+				!gameState.hasEndCondition(getMillis())
+			) { chainRandomPlayWithDelay()}
+		})
+		delay.play()					
 	}
 }
