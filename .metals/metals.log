@@ -36,3 +36,111 @@ INFO: Unsupported notification method: $/setTrace
 2026.04.05 18:34:01 INFO  no build target found for C:\Users\migue\Documents\DamasDoChines\DamasDoChines\src\Main.scala. Using presentation compiler with project's scala-library version: 3.3.7
 2026.04.05 18:34:03 INFO  no build target found for C:\Users\migue\Documents\DamasDoChines\DamasDoChines\src\Main.scala. Using presentation compiler with project's scala-library version: 3.3.7
 2026.04.05 18:34:06 INFO  no build target found for C:\Users\migue\Documents\DamasDoChines\DamasDoChines\src\Main.scala. Using presentation compiler with project's scala-library version: 3.3.7
+2026.04.12 15:57:48 INFO  Started: Metals version 1.6.7 in folders '/home/pedro/Dev/DamasDoChines' for client Visual Studio Code 1.114.0.[0m
+2026.04.12 15:57:48 INFO  Memory monitor started[0m
+2026.04.12 15:57:49 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.[0m
+2026.04.12 15:57:49 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:53 WARN  no build target for: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala[0m
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+Apr 12, 2026 3:57:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+Apr 12, 2026 3:57:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:53 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:54 INFO  running '/usr/lib/jvm/java-21-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals15389843276447592655/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+2026.04.12 15:57:54 ERROR [info] [launcher] getting org.scala-sbt sbt 2.0.0  (this may take some time)...[0m
+2026.04.12 15:57:56 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:59 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:59 WARN  no build target for: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala[0m
+2026.04.12 15:57:59 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:59 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:59 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:57:59 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:00 ERROR [error] [launcher] xsbt.boot.internal.shaded.coursier.error.ResolutionError$CantDownloadModule: Error downloading org.scala-sbt:sbt:2.0.0[0m
+2026.04.12 15:58:00 ERROR   not found: /home/pedro/.ivy2/local/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:00 ERROR   not found: https://repo1.maven.org/maven2/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:00 ERROR   not found: https://repo.scala-sbt.org/scalasbt/maven-releases/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:00 ERROR   not found: https://repo.scala-sbt.org/scalasbt/maven-snapshots/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:00 ERROR   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:00 ERROR   not found: https://repo.scala-sbt.org/scalasbt/ivy-snapshots/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:00 ERROR [error] [launcher] could not retrieve sbt 2.0.0[0m
+2026.04.12 15:58:00 INFO  time: ran 'sbt bloopInstall' in 6.76s[0m
+2026.04.12 15:58:00 ERROR sbt command failed: /usr/lib/jvm/java-21-openjdk-amd64/bin/java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar /tmp/metals15389843276447592655/sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall[0m
+2026.04.12 15:58:00 WARN  no build target for: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala[0m
+2026.04.12 15:58:00 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:00 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:01 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:01 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:03 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:13 INFO  sbt 2.0.0 found for workspace.[0m
+2026.04.12 15:58:14 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:14 ERROR [info] [launcher] getting org.scala-sbt sbt 2.0.0  (this may take some time)...[0m
+2026.04.12 15:58:18 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:18 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$BuildTargetNotFoundForPathException: No build target could be found for the path: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala
+	at scala.meta.internal.metals.debug.DebugDiscovery.validate(DebugDiscovery.scala:88)
+	at scala.meta.internal.metals.debug.DebugDiscovery.debugDiscovery(DebugDiscovery.scala:164)
+	at scala.meta.internal.metals.debug.DebugDiscovery.runCommandDiscovery(DebugDiscovery.scala:66)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$discoverMainClasses$1(MetalsLspService.scala:1632)
+	at scala.meta.internal.metals.MetalsLspService.afterCompilationFinished(MetalsLspService.scala:1589)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1632)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:943)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:184)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:265)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:195)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+[0m
+2026.04.12 15:58:18 WARN  no build target for: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala[0m
+2026.04.12 15:58:18 ERROR scala.meta.internal.metals.debug.DiscoveryFailures$BuildTargetNotFoundForPathException: No build target could be found for the path: /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala
+	at scala.meta.internal.metals.debug.DebugDiscovery.validate(DebugDiscovery.scala:88)
+	at scala.meta.internal.metals.debug.DebugDiscovery.debugDiscovery(DebugDiscovery.scala:164)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$debugDiscovery$3(MetalsLspService.scala:1594)
+	at scala.meta.internal.metals.MetalsLspService.afterCompilationFinished(MetalsLspService.scala:1589)
+	at scala.meta.internal.metals.MetalsLspService.debugDiscovery(MetalsLspService.scala:1594)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:1157)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:184)
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:128)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:265)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:195)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:189)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:97)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.lang.Thread.run(Thread.java:1583)
+[0m
+2026.04.12 15:58:18 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:18 INFO  no build target found for /home/pedro/Dev/DamasDoChines/DamasDoChines/src/Main.scala. Using presentation compiler with project's scala-library version: 3.3.7[0m
+2026.04.12 15:58:19 ERROR [error] [launcher] xsbt.boot.internal.shaded.coursier.error.ResolutionError$CantDownloadModule: Error downloading org.scala-sbt:sbt:2.0.0[0m
+2026.04.12 15:58:19 ERROR   not found: /home/pedro/.ivy2/local/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:19 ERROR   not found: https://repo1.maven.org/maven2/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:19 ERROR   not found: https://repo.scala-sbt.org/scalasbt/maven-releases/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:19 ERROR   not found: https://repo.scala-sbt.org/scalasbt/maven-snapshots/org/scala-sbt/sbt/2.0.0/sbt-2.0.0.pom[0m
+2026.04.12 15:58:19 ERROR   not found: https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:19 ERROR   not found: https://repo.scala-sbt.org/scalasbt/ivy-snapshots/org.scala-sbt/sbt/2.0.0/ivys/ivy.xml[0m
+2026.04.12 15:58:19 ERROR [error] [launcher] could not retrieve sbt 2.0.0[0m
+2026.04.12 15:58:18 INFO  time: ran 'sbt bspConfig' in 5.49s[0m
+2026.04.12 15:58:19 ERROR Creation of .bsp/sbt failed with exit code: 1[0m
+2026.04.12 15:58:35 INFO  Shutting down server[0m
+2026.04.12 15:58:35 INFO  Memory monitor stopped[0m
+2026.04.12 15:58:35 INFO  shutting down Metals[0m
+2026.04.12 15:58:35 INFO  Exiting server[0m
