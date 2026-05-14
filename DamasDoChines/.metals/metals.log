@@ -33309,3 +33309,4 @@ WARNING: Unmatched cancel notification for request id 29089
 2026.05.14 13:25:49 WARN  no build target for: /Users/pedro/Dev/School/DamasDoChines/DamasDoChines/src/gui/Controller.scala
 2026.05.14 13:25:49 INFO  no build target found for /Users/pedro/Dev/School/DamasDoChines/DamasDoChines/src/gui/Controller.scala. Using presentation compiler with project's scala-library version: 2.12.19
 2026.05.14 13:25:49 INFO  no build target found for /Users/pedro/Dev/School/DamasDoChines/DamasDoChines/src/gui/Controller.scala. Using presentation compiler with project's scala-library version: 2.12.19
+2026.05.14 13:26:32 INFO  no build target found for /Users/pedro/Dev/School/DamasDoChines/DamasDoChines/src/gui/Controller.scala. Using presentation compiler with project's scala-library version: 2.12.19
