@@ -7,18 +7,18 @@ import code.code.Score
 import code.code.Stone
 
 case class State(
-    board:Board,
-    player: Stone,
-    lstOpenCoords: List[Coord2D],
-    turn: Int,
-    rand: MyRandom,
-    startTime: Long,
-    duration: Long,
-    dimensions: (Int, Int),
-    oldState: Option[State],
-    score: Score,
-    coordPos: Option[Coord2D],
-    botStone: Stone,
+    board:Board, //0
+    player: Stone, //1
+    lstOpenCoords: List[Coord2D], //2
+    turn: Int, //3
+    rand: MyRandom, //4
+    startTime: Long, //5
+    duration: Long, //6
+    dimensions: (Int, Int), //7
+    oldState: Option[State], //8
+    score: Score, //9
+    coordPos: Option[Coord2D], //10
+    botStone: Stone, //11
     ) {
   
 

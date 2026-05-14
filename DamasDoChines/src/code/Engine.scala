@@ -280,8 +280,10 @@ object Engine {
 								state.botStone
 							)
 							
-							canContinue(movedState, coordTo) 
-						
+							val s = canContinue(movedState, coordTo)
+							Main.writeInputAppend("state.txt", Main.getStateToString(state))
+							s
+
 						case None =>
 							Main.output(Console.RED + "Invalid move" + Console.RESET)
 							state
@@ -316,7 +318,9 @@ object Engine {
 							state.duration, state.dimensions,
 							Some(state), scorer, Some(np), state.botStone
 						)
-						canContinue(movedState, np)
+						val s = canContinue(movedState, np)
+						Main.writeInputAppend("state.txt", Main.getStateToString(state))
+						s
 
 					case (Some(nb), None) =>
 						Main.output("Can't Continue")
@@ -341,6 +345,7 @@ object Engine {
 
 
 			case "quit" => 
+				Main.writeInputAppend("state.txt", Main.getStateToString(state)) // salvar o estado antes de correr uma atualizaçao
 				Main.doQuit()
 				state
 
@@ -350,6 +355,7 @@ object Engine {
 				// através de uma recursão
 				def getFirstState(state: State): State = {
 					if state.oldState == None then
+						Main.writeInput("state.txt", Main.getStateToString(state))
 						state
 					else
 						getFirstState(state.oldState.getOrElse(state))
@@ -358,16 +364,21 @@ object Engine {
 
 
 			case "change" =>
-				State(
+				val s = State(
 					state.board, Engine.oppositeStone(state.player),
 					state.lstOpenCoords, state.turn+1, state.rand,
 					Main.getMillis(), state.duration, state.dimensions,
 					Some(state), state.score, None, state.botStone
 				)
 
+				Main.writeInputAppend("state.txt", Main.getStateToString(state))
+				s
+
 
 			case "undo" => 
-				state.oldState.getOrElse(state) // Validação para um possível erro de tipo
+				val s = state.oldState.getOrElse(state) // Validação para um possível erro de tipo
+				Main.writeInputAppend("state.txt", Main.getStateToString(state))
+				s
 			case None => 
 				Main.output(Console.RED + "Invalid command" + Console.RESET)
 				state

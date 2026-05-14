@@ -8,6 +8,7 @@ lazy val osName = sys.props("os.name").toLowerCase
 lazy val javafxPlatform =
   if (osName.contains("win")) "win"
   else if (osName.contains("linux")) "linux"
+  else if (osName.contains("mac")) "mac"
   else sys.error(s"Unsupported OS for JavaFX: ${sys.props("os.name")}")
 
 Compile / unmanagedSourceDirectories += baseDirectory.value / "src"
