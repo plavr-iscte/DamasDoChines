@@ -56,6 +56,12 @@ class Controller {
 			None,
 			Stone.Black,
 		)
+
+		val lines = Main.readFromFile("state.txt").split("\n").toList
+			.map(_.trim)
+			.filter(_.nonEmpty)
+		gameState = Main.stringToState(lines, None)
+		//Main.writeInput("state.txt", Main.getStateToString(gameState))
 		l_id.setText(Main.getTitle(gameState))
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
 			override def handle(event: ActionEvent): Unit = {
@@ -259,7 +265,6 @@ class Controller {
 			changeGUI(gameState.board)
 
 			if (
-				gameState.coordPos.isDefined &&
 				gameState.coordPos.isDefined &&
 				!gameState.hasEndCondition(getMillis())
 			) { chainRandomPlayWithDelay()}
