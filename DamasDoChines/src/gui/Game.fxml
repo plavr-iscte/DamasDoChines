@@ -64,17 +64,17 @@
             </Button>
          </children>
       </HBox>
-      <VBox alignment="CENTER" layoutX="-17.0" layoutY="76.0" prefHeight="210.0" prefWidth="141.0" spacing="25.0" styleClass="button-box">
+      <VBox alignment="CENTER" layoutX="-26.0" layoutY="48.0" prefHeight="210.0" prefWidth="141.0" spacing="25.0" styleClass="button-box">
          <children>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label styleClass="sub_text" text="Turno:" />
+                  <Label styleClass="sub_text" text="Turno" />
                   <Label fx:id="turnL" styleClass="sub_text" text="Label" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                <children>
-                  <Label fx:id="pL" styleClass="sub_text" text="Player: " />
+                  <Label fx:id="pL" styleClass="sub_text" text="Player" />
                   <Circle fx:id="p_circle" fill="DODGERBLUE" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
                </children>
             </VBox>
@@ -90,6 +90,22 @@
                   <Label fx:id="b_score" styleClass="sub_text" text="Label" />
                </children>
             </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="pL1" styleClass="sub_text" text="Dificuldade" />
+                  <Circle fx:id="dif_circle" fill="DODGERBLUE" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="484.0" layoutY="76.0" prefHeight="137.0" prefWidth="100.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="54.0" styleClass="sub_text" text="Avisos">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="aviso_l" text="..." />
          </children>
       </VBox>
    </children>

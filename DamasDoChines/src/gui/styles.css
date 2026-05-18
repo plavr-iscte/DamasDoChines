@@ -102,3 +102,8 @@
     -fx-border-radius: 18;
 }
 
+
+.easy_diff { -fx-fill:#44ea44 }
+.medium_diff { -fx-fill:#f4f134 }
+.hard_diff { -fx-fill:#f4901e }
+.extreme_diff { -fx-fill:#dc5433 }

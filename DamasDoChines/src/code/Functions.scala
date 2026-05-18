@@ -38,6 +38,17 @@ def recurGT(state: State): Unit = {
 		else 
 			"Esgotou o tempo: " + getElapsedTime(state)
 	}
+
+	def getVictoryLabel(state: State): String = {
+		state.player match {
+			case Stone.Black =>  "Vencedor: Brancas"
+			case Stone.White =>  "Vencedor: Pretas"
+		}
+	}
+
+	def getEndLabel(state: State): String = {
+		"Tempo esgotou"
+	}
 	
 
 	/// Elementos não funcionais

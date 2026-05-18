@@ -39,6 +39,8 @@ class Controller {
 	@FXML private var p_circle: Circle = _
 	@FXML private var b_score: Label = _
 	@FXML private var w_score: Label = _
+	@FXML private var aviso_l: Label = _
+	@FXML private var dif_circle: Circle = _
 	private var mposx:Double =0
 	private var mposy:Double=0
 	private var stoneX:Double =0
@@ -294,6 +296,21 @@ class Controller {
 		turnL.setText(gameState.turn.toString)
 		b_score.setText(gameState.score.black.toString)
 		w_score.setText(gameState.score.white.toString)
+
+		dif_circle.getStyleClass.removeAll("easy_diff", "medium_diff", "hard_diff", "extreme_diff")
+
+		gameState.difficulty match {
+			case Difficulty.Easy    => dif_circle.getStyleClass.add("easy_diff")
+			case Difficulty.Medium  => dif_circle.getStyleClass.add("medium_diff")
+			case Difficulty.Hard    => dif_circle.getStyleClass.add("hard_diff")
+			case Difficulty.Extreme => dif_circle.getStyleClass.add("extreme_diff")
+		}
+
+		if (gameState.hasVictory()) {
+			aviso_l.setText(Functions.getVictoryLabel(gameState))
+		} else if(gameState.hasEnded(Functions.getMillis())) {
+			aviso_l.setText(Functions.getEndLabel(gameState))
+		}
 	}
 
 
