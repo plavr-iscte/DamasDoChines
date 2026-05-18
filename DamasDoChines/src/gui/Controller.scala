@@ -11,6 +11,7 @@ import code.Cli
 import code.Score
 import code.Board
 import code.GameTick
+import code.Difficulty
 import javafx.fxml.FXML
 import javafx.scene.layout.{GridPane, StackPane}
 import code.Main.*
@@ -78,8 +79,8 @@ class Controller {
 			Score(0, 0),
 			None,
 			Stone.Black,
+			Difficulty.Hard,
 		)
-		
 		l_id.setText(Main.getTitle(gameState))
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
 			override def handle(event: ActionEvent): Unit = {
@@ -96,6 +97,13 @@ class Controller {
 			override def handle(event: ActionEvent): Unit = {
 				gameState = getNextState(gameState, getCommand("", "change"))
 				changeGUI(gameState.board)
+
+				if(
+					gameState.player == gameState.botStone && 
+					!gameState.hasEndCondition(getMillis()) 
+				) {
+					chainRandomPlayWithDelay()
+				}
 			}
 		})
 		B_Restart.setOnAction(new EventHandler[ActionEvent] {
@@ -159,7 +167,7 @@ class Controller {
 					val dragStone = clickedStone.get
 					square.getChildren.remove(dragStone)
 
-					val plays = getAllPlays(gameState, Coord2D(row, col))
+					val plays = getAllPlaysForCoord(gameState, Coord2D(row, col))
 					plays.foreach(s =>
 						val square = getSquare(s.getx, s.gety)
 						val playCircle = Circle(10)
@@ -285,15 +293,27 @@ class Controller {
 
 		val delay = new PauseTransition(Duration.seconds(1))
 		delay.setOnFinished(_ => {
-			gameState = getNextState(gameState, "pr") // Não funcional
-			changeGUI(gameState.board)
+		gameState = getNextState(gameState, "pr")
 
-			if (
-				gameState.coordPos.isDefined &&
-				gameState.coordPos.isDefined &&
-				!gameState.hasEndCondition(getMillis())
-			) { chainRandomPlayWithDelay()}
+		if (
+			gameState.difficulty == Difficulty.Easy &&
+			gameState.player == gameState.botStone
+		){
+			gameState = gameState.changeTurn()
+		}
+
+		changeGUI(gameState.board)
+
+		if (
+			gameState.difficulty != Difficulty.Easy &&
+			gameState.player == gameState.botStone &&
+			gameState.coordPos.isDefined &&
+			!gameState.hasEndCondition(getMillis())
+		) {
+			chainRandomPlayWithDelay()
+		}
+
 		})
-		delay.play()					
+		delay.play()
 	}
 }

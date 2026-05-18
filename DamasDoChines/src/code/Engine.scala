@@ -199,7 +199,13 @@ object Engine {
 				.toList
 
 		result match {
-			case "undo" :: Nil | "quit" :: Nil | "change"::Nil | "pr"::Nil | "restart"::Nil  => result.head
+			case 
+				"undo" :: Nil
+				| "quit" :: Nil
+				| "change"::Nil
+				| "pr"::Nil
+				| "pr-single"::Nil
+				| "restart"::Nil  => result.head
 			case "play" :: colFrom :: rowFrom :: colTo :: rowTo :: Nil =>
 				(stringToCoord(colFrom.toString, rowFrom.toString), stringToCoord(colTo.toString, rowTo.toString))
 			case _ => getCommand(prompt,command)
@@ -216,11 +222,48 @@ object Engine {
 		}
 	}
 
-	def getAllPlays(state: State, coor:Coord2D): List[Coord2D] = {
+	def getAllPlaysForCoord(state: State, coor:Coord2D): List[Coord2D] = {
 
 		// Baseado no State.hasVictory
 		moves(coor).filter {
 			c => play(state.board, state.player, coor, c, state.lstOpenCoords)._1.nonEmpty
+		}
+	}
+
+	def getLongestPathPlay(
+		state: State,
+		current: Coord2D,
+		path: List[(Coord2D, Coord2D)]=Nil
+	): List[(Coord2D, Coord2D)] = {
+
+		val nextMoves = {
+			moves(current).filter { c =>
+				play(state.board, state.player, current, c, state.lstOpenCoords)._1.nonEmpty
+			}
+		}
+
+		if(nextMoves.isEmpty){ path }
+		else {
+			val paths = nextMoves.map { next =>
+				val (b, o) = play(state.board, state.player, current, next, state.lstOpenCoords)
+				b match {
+					case Some(nb) =>
+						val newState = {
+							state.copy(
+								board = nb,
+								lstOpenCoords = o,
+							)
+						}
+						getLongestPathPlay(
+							newState,
+							next, 
+							path:+ (current, next)
+						)
+					case None => path
+				}
+			}
+
+			paths.maxBy(_.size)
 		}
 	}
 
@@ -235,7 +278,8 @@ object Engine {
 				state.turn, state.rand,
 				state.startTime, state.duration,
 				state.dimensions, Some(state),
-				state.score, Some(from), state.botStone
+				state.score, Some(from), state.botStone,
+				state.difficulty
 			)
 		else
 			State(
@@ -244,9 +288,38 @@ object Engine {
 				state.rand, Main.getMillis(),
 				state.duration, state.dimensions,
 				Some(state), state.score, None,
-				state.botStone
+				state.botStone, state.difficulty
 			)
 	}
+
+	/*def getSingleJumps(state: State, from:Coord2D): List[Coord2D] = {
+		def hasContinuation(board: Board, open:List[Coord2D], at: Coord2D): Boolean =
+			moves(at) match {
+				case Nil => false
+				case to::remainder =>
+					play(board, state.player, at, to, open)._1.nonEmpty || hasContinuationInList(board, open, at, remainder)
+			}
+		def hasContinuationInList(board: Board, open: List[Coord2D], at: Coord2D, lst:List[Coord2D]): Boolean =
+			lst match {
+				case Nil => false
+				case to :: remainder =>
+					play(board, state.player, at, to, open)._1.nonEmpty || hasContinuationInList(board, open, at, remainder)
+			}
+
+		
+		def recursion(lst: List[Coord2D]): List[Coord2D] =
+			lst match {
+				case Nil => Nil
+				case to :: remainder =>
+					val continuation = recursion(remainder)
+					play(state.board, state.player, from, to, state.lstOpenCoords) match {
+						case (Some(newBoard), newOpen) if !hasContinuation(newBoard, newOpen, to) => to :: continuation
+						case _ => continuation
+					}
+			}
+
+		recursion(moves(from))
+	}*/
 
 	def getNextState(state: State, comm: Any): State = {
 		comm match {
@@ -277,13 +350,11 @@ object Engine {
 								state.turn, state.rand, state.startTime,
 								state.duration, state.dimensions,
 								Some(state), scorer, Some(coordTo),
-								state.botStone
+								state.botStone, state.difficulty
 							)
 							
-							val s = canContinue(movedState, coordTo)
-							Main.writeInputAppend("state.txt", Main.getStateToString(state))
-							s
-
+							canContinue(movedState, coordTo) 
+						
 						case None =>
 							Main.output(Console.RED + "Invalid move" + Console.RESET)
 							state
@@ -299,53 +370,198 @@ object Engine {
 					case Stone.White => Score(state.score.black, state.score.white + 1)
 				}
 
-				val (newBoard, newRand, newOpen, newPos) =
-					Engine.playRandomly(
-						state.board,
-						state.rand,
-						state.player,
-						state.lstOpenCoords,
-						state.coordPos,
-						Engine.randomMove
-					)
-				
-				(newBoard, newPos) match {
-					case (Some(nb), Some(np)) =>
-						Main.output("Random move: " + np)
-						val movedState = State(
-							nb, state.player, newOpen,
-							state.turn, newRand, state.startTime,
-							state.duration, state.dimensions,
-							Some(state), scorer, Some(np), state.botStone
-						)
-						val s = canContinue(movedState, np)
-						Main.writeInputAppend("state.txt", Main.getStateToString(state))
-						s
+				state.difficulty match {
+					case Difficulty.Easy | Difficulty.Medium => 			
+						val (newBoard, newRand, newOpen, newPos) =
+							Engine.playRandomly(
+								state.board,
+								state.rand,
+								state.player,
+								state.lstOpenCoords,
+								state.coordPos,
+								Engine.randomMove
+							)
+						
+						(newBoard, newPos) match {
+							case (Some(nb), Some(np)) =>
+								Main.output("Random move: " + np)
+								val movedState = State(
+									nb, state.player, newOpen,
+									state.turn, newRand, state.startTime,
+									state.duration, state.dimensions,
+									Some(state), scorer, Some(np), state.botStone,
+									state.difficulty
+								)
+								canContinue(movedState, np)
 
-					case (Some(nb), None) =>
-						Main.output("Can't Continue")
-						State(
-							nb, Engine.oppositeStone(state.player),
-							newOpen, state.turn+1, newRand,
-							Main.getMillis(), state.duration, state.dimensions,
-							Some(state), state.score, None, state.botStone
-						)
-					
-					case (None, _) =>
-						Main.output("Can't Continue")
-						State(
-							state.board, Engine.oppositeStone(state.player),
-							state.lstOpenCoords, state.turn + 1,
-							newRand, Main.getMillis(), state.duration,
-							state.dimensions, Some(state), state.score, 
-							None, state.botStone
-						)
+							case (Some(nb), None) =>
+								Main.output("Can't Continue")
+								State(
+									nb, Engine.oppositeStone(state.player),
+									newOpen, state.turn+1, newRand,
+									Main.getMillis(), state.duration, state.dimensions,
+									Some(state), state.score, None, state.botStone,
+									state.difficulty
+								)
+							
+							case (None, _) =>
+								Main.output("Can't Continue")
+								State(
+									state.board, Engine.oppositeStone(state.player),
+									state.lstOpenCoords, state.turn + 1,
+									newRand, Main.getMillis(), state.duration,
+									state.dimensions, Some(state), state.score, 
+									None, state.botStone, state.difficulty
+								)
+										
+						}
+					case Difficulty.Hard => 
+						val src: List[Coord2D] =
+							state.coordPos match {
+								case Some(forced) => List(forced)
+								case None =>
+									state.board.collect { 
+										case (c,s) if s == state.player => c
+									}.toList
+							}
+						if (src.isEmpty) {
+							State(
+								state.board, Engine.oppositeStone(state.player),
+								state.lstOpenCoords, state.turn + 1,
+								state.rand, Main.getMillis(), state.duration,
+								state.dimensions, Some(state), state.score,
+								None, state.botStone, state.difficulty
+							)
+						} else {
+							val paths = src.map(from => getLongestPathPlay(state, from)).filter(_.nonEmpty)
+							if(paths.isEmpty){
+								State(
+									state.board, oppositeStone(state.player),
+									state.lstOpenCoords, state.turn+1,
+									state.rand, Main.getMillis(), state.duration,
+									state.dimensions, Some(state), state.score,
+									None, state.botStone, state.difficulty
+								)
+							} else {
+								val bestP = paths.maxBy(_.size)
+								val (from, to) = bestP.head
+
+								val (newBoard, newOpen) = 
+									play(
+										state.board,
+										state.player,
+										from,
+										to,
+										state.lstOpenCoords
+									)
 								
-				}			
+								newBoard match {
+									case Some(nb) =>
+										val movedState = State(
+											nb, state.player, newOpen,
+											state.turn, state.rand, state.startTime,
+											state.duration, state.dimensions,
+											Some(state), scorer, Some(to),
+											state.botStone, state.difficulty
+										)
+										canContinue(movedState,to)
 
+									case None => state
+								}
+							}
+						}
+				}
+
+			/*case "pr-single" => 
+				if (state.player != state.botStone) state
+				else {
+					val scorer = state.player match {
+						case Stone.Black => Score(state.score.black + 1, state.score.white)
+						case Stone.White => Score(state.score.black, state.score.white + 1)
+					}
+
+					val src = //source de peças moviveis
+						state.coordPos match {
+							case Some(forced) => List(forced)
+							case None => state.board.collect {
+								case (c,s) if s == state.botStone => c 
+							}.toList
+						}
+
+					def buildLst(src: List[Coord2D], isSingle: Boolean): List[(Coord2D, Coord2D)] =
+						src match {
+							case Nil => Nil
+							case from::remainder =>
+								val target =
+									if(isSingle) getSingleJumps(state, from)
+									else getAllPlaysForCoord(state, from)
+								target.map(to => (from, to)) ++ buildLst(remainder, isSingle)
+						}
+
+					val singleMoves = buildLst(src, true)
+					val targets =
+						if (singleMoves.nonEmpty) singleMoves
+						else buildLst(src, false)
+
+
+					if (targets.isEmpty) {
+						val containsBotMoves =
+							src.exists(from => getAllPlaysForCoord(state, from).nonEmpty)
+
+						if (containsBotMoves) {
+							getNextState(state, "pr")
+						} else {
+							State(
+								state.board, oppositeStone(state.player),
+								state.lstOpenCoords, state.turn+1,
+								state.rand, Main.getMillis(), state.duration,
+								state.dimensions, Some(state), state.score,
+								None, state.botStone, state.difficulty
+							)
+						}
+					} else {
+						val(f, r) = state.rand.nextInt(targets.length)
+						val nextRand = r.asInstanceOf[MyRandom]
+						val (from, to) = targets(f)
+
+						val (potentialBoard, newOpen) = play(state.board, state.player, from, to, state.lstOpenCoords)
+
+						potentialBoard match {
+							case Some(nb) =>
+								println(s"[pr-single] chosen from=$from to=$to -> SUCCESS")
+								if (singleMoves.nonEmpty) {
+									State(
+										nb, oppositeStone(state.player),
+										newOpen, state.turn+1,
+										nextRand, Main.getMillis(), state.duration,
+										state.dimensions, Some(state), state.score,
+										None, state.botStone, state.difficulty
+									)
+								} else {
+									val movedState = State(
+										nb, state.player, newOpen,
+										state.turn, nextRand, state.startTime,
+										state.duration, state.dimensions,
+										Some(state), scorer, Some(to),
+										state.botStone,state.difficulty
+									)
+									canContinue(movedState, to)
+								}
+							case None => 
+								println(s"[pr-single] chosen from=$from to=$to -> FAILED play(None)")
+								State(
+									state.board, oppositeStone(state.player),
+									state.lstOpenCoords, state.turn + 1,
+									nextRand, Main.getMillis(), state.duration,
+									state.dimensions, Some(state), state.score,
+									None, state.botStone, state.difficulty
+								)
+						}
+					}
+				}
+			*/
 
 			case "quit" => 
-				Main.writeInputAppend("state.txt", Main.getStateToString(state)) // salvar o estado antes de correr uma atualizaçao
 				Main.doQuit()
 				state
 
@@ -355,8 +571,13 @@ object Engine {
 				// através de uma recursão
 				def getFirstState(state: State): State = {
 					if state.oldState == None then
-						Main.writeInput("state.txt", Main.getStateToString(state))
-						state
+						State(
+							state.board, state.player, state.lstOpenCoords,
+							state.turn, state.rand, Main.getMillis(),
+							state.duration, state.dimensions, state.oldState,
+							state.score, state.coordPos,
+							state.botStone, state.difficulty
+						)
 					else
 						getFirstState(state.oldState.getOrElse(state))
 				}
@@ -364,21 +585,17 @@ object Engine {
 
 
 			case "change" =>
-				val s = State(
+				State(
 					state.board, Engine.oppositeStone(state.player),
 					state.lstOpenCoords, state.turn+1, state.rand,
 					Main.getMillis(), state.duration, state.dimensions,
-					Some(state), state.score, None, state.botStone
+					Some(state), state.score, None, state.botStone,
+					state.difficulty
 				)
-
-				Main.writeInputAppend("state.txt", Main.getStateToString(state))
-				s
 
 
 			case "undo" => 
-				val s = state.oldState.getOrElse(state) // Validação para um possível erro de tipo
-				Main.writeInputAppend("state.txt", Main.getStateToString(state))
-				s
+				state.oldState.getOrElse(state) // Validação para um possível erro de tipo
 			case None => 
 				Main.output(Console.RED + "Invalid command" + Console.RESET)
 				state

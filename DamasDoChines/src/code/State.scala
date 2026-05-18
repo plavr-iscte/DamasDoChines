@@ -5,6 +5,7 @@ import code.code.Engine
 import code.code.MyRandom
 import code.code.Score
 import code.code.Stone
+import code.code.Engine.oppositeStone
 
 case class State(
     board:Board, //0
@@ -19,6 +20,7 @@ case class State(
     score: Score, //9
     coordPos: Option[Coord2D], //10
     botStone: Stone, //11
+    difficulty: Difficulty,
     ) {
   
 
@@ -42,6 +44,14 @@ case class State(
     def hasEndCondition(millis: Long): Boolean = {
         hasVictory() || hasEnded(millis)
     }
+
+    def changeTurn(): State =
+        State(
+            board, Engine.oppositeStone(player), lstOpenCoords,
+            turn+1, rand, Main.getMillis(),
+            duration, dimensions, oldState=Some(this),
+            score, None, botStone, difficulty
+        )
 
 
 }

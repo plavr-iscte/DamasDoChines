@@ -1,6 +1,13 @@
-.background_home{
-    -fx-background-color: #8a8a8a;
+.background_home {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #5f5f5f,
+        #7a7a7a,
+        #8a8a8a,
+        #a3a3a3
+    );
 }
+
 .buttons{
     -fx-border-radius: 20;
     -fx-background-color: #1b2029;
@@ -34,6 +41,64 @@
 }
 
 .selected_stone{
-    -fx-stroke: #eecf15;
+    -fx-stroke: #d6a84f;
     -fx-stroke-width: 3;
 }
+
+.game_border{
+    -fx-background-color: #1b2029 !important;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 8, 0.0, 2, 2);
+}
+
+
+.title-text {
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b2029;
+}
+
+.button-box {
+    -fx-background-color:
+        rgba(255, 255, 255, 0.24),
+        rgba(255, 255, 255, 0.10);
+
+    -fx-background-insets: 0, 1.5;
+    -fx-background-radius: 22, 20;
+
+    -fx-border-color: rgba(255, 255, 255, 0.45);
+    -fx-border-width: 1.4;
+    -fx-border-radius: 22;
+
+    -fx-padding: 9 26 9 26;
+
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.32), 18, 0.0, 0, 5);
+}
+
+.time_text {
+    -fx-background-color: rgba(255,255,255,0.22);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255,255,255,0.55);
+    -fx-border-radius: 16;
+    -fx-border-width: 1.5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.25), 10, 0, 0, 3);
+    -fx-pref-width: 170;
+    -fx-pref-height: 38;
+}
+
+.sub_text {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1b2029;
+}
+
+.selected_option{
+    -fx-stroke: #d6a84f;
+    -fx-stroke-width: 2;
+}
+
+.selected_button{
+    -fx-border-color: #d6a84f;
+    -fx-border-width: 2;
+    -fx-border-radius: 18;
+}
+
