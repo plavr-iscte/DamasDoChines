@@ -22,7 +22,7 @@ import javafx.event.{ActionEvent, EventHandler}
 import javafx.scene.control.Button
 import javafx.scene.control.Label
 
-import javafx.animation.PauseTransition
+import javafx.animation.{PauseTransition,AnimationTimer}
 import javafx.util.Duration
 
 
@@ -34,9 +34,32 @@ class Controller {
 	@FXML private var B_RMove: Button = _
 	@FXML private var B_Undo: Button = _
 	@FXML private var l_id: Label = _
+	private var mposx:Double =0
+	private var mposy:Double=0
+	private var stoneX:Double =0
+	private var stoneY:Double =0
 	private var gameState: State = _
 	private var floatingStone: Option[Circle] = None
 	private var selectedCoord: Option[Coord2D] = None
+	private var scaleAnim:Double =0
+	private var activeBtn:Option[Button] = None
+	private var scaleBtn:Double =0
+
+	val anim:AnimationTimer = new AnimationTimer{
+        def handle(now:Long):Unit = {
+            floatingStone.foreach(s=>{
+                stoneX = stoneX + (mposx - stoneX)*0.1
+                stoneY = stoneY + (mposy - stoneY)*0.1
+                s.setTranslateX(stoneX - s.getRadius)
+                s.setTranslateY(stoneY - s.getRadius)
+
+                scaleAnim=scaleAnim + (20.0 - scaleAnim) * 0.1
+                s.setRadius(scaleAnim)
+            })
+
+        }
+    }
+
 
 	def initialize(): Unit = {
 		val rand = MyRandom(Main.getMillis())
@@ -56,12 +79,7 @@ class Controller {
 			None,
 			Stone.Black,
 		)
-
-		val lines = Main.readFromFile("state.txt").split("\n").toList
-			.map(_.trim)
-			.filter(_.nonEmpty)
-		gameState = Main.stringToState(lines, None)
-		//Main.writeInput("state.txt", Main.getStateToString(gameState))
+		
 		l_id.setText(Main.getTitle(gameState))
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
 			override def handle(event: ActionEvent): Unit = {
@@ -136,7 +154,6 @@ class Controller {
 					val db = square.startDragAndDrop(TransferMode.MOVE)
 					val content = new ClipboardContent()
 					content.putString(s"$row,$col")
-
 					db.setContent(content)
 
 					val dragStone = clickedStone.get
@@ -157,22 +174,29 @@ class Controller {
 					floatingStone = Some(dragStone)
 					floatingStone.foreach(s=>{
 						s.getStyleClass.add("selected_stone")
+						scaleAnim = s.getScaleX
 					})
 				}
+
+				stoneX = square.getLayoutX + (square.getWidth/2)
+				stoneY = square.getLayoutY + (square.getHeight/2)
+				anim.start()
 				event.consume()
 			})
+
 
 			square.setOnDragOver(event => {
 				floatingStone.foreach(s => {
 					val mousepos = tabuleiro.sceneToLocal(event.getSceneX, event.getSceneY)
-					s.setTranslateX(mousepos.getX - 15)
-					s.setTranslateY(mousepos.getY - 15)
+					mposx = mousepos.getX
+					mposy = mousepos.getY
 				})
 				if (event.getGestureSource != square && event.getDragboard.hasString) {
 					event.acceptTransferModes(TransferMode.MOVE)
 				}
 				event.consume()
 			})
+
 
 			square.setOnDragDropped(event => {				
 				if(gameState.hasEndCondition(getMillis())) {
@@ -201,6 +225,7 @@ class Controller {
 						gameState = getNextState(gameState, getCommand("", s"play $originRow $originCol $row $col"))
 						floatingStone.foreach(stone => tabuleiro.getChildren.remove(stone))
 
+
 						changeGUI(gameState.board)
 						if (gameState.player == gameState.botStone && !gameState.hasEndCondition(getMillis())) {
 							chainRandomPlayWithDelay()
@@ -223,9 +248,8 @@ class Controller {
 				floatingStone = None
 				event.consume()
 			})
-
 		}
-
+		anim.start()
 		changeGUI(gameState.board)
 	}
 
@@ -265,6 +289,7 @@ class Controller {
 			changeGUI(gameState.board)
 
 			if (
+				gameState.coordPos.isDefined &&
 				gameState.coordPos.isDefined &&
 				!gameState.hasEndCondition(getMillis())
 			) { chainRandomPlayWithDelay()}
