@@ -6,6 +6,7 @@ import scala.util.Try
 import code.code.Board
 import code.code.Coord2D
 import code.code.State
+import code.code.Functions
 
 case class Cli(
 	state: State,
@@ -64,7 +65,7 @@ case class Cli(
 	}
 
 	def showBoard(board: Board, openCoords: List[Coord2D], numRows: Int, numCols: Int): Unit = {
-		Main.output(renderBoard(board, openCoords, numRows, numCols))
+		Functions.output(renderBoard(board, openCoords, numRows, numCols))
 	}
 
 

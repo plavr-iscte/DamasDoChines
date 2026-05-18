@@ -4,6 +4,7 @@ import scala.annotation.tailrec
 import scala.collection.parallel.CollectionConverters._
 
 import gui.Controller
+import code.code.Functions
 
 object Engine {
 
@@ -191,7 +192,7 @@ object Engine {
 
 	def getCommand(prompt: String, command: String): Any = {
 		val result = 
-			(if command.nonEmpty then command else Main.readInput(prompt + ": "))
+			(if command.nonEmpty then command else Functions.readInput(prompt + ": "))
 				.trim
 				.toLowerCase
 				.split("\\s+")
@@ -285,7 +286,7 @@ object Engine {
 			State(
 				state.board, Engine.oppositeStone(state.player),
 				state.lstOpenCoords, state.turn+1,
-				state.rand, Main.getMillis(),
+				state.rand, Functions.getMillis(),
 				state.duration, state.dimensions,
 				Some(state), state.score, None,
 				state.botStone, state.difficulty
@@ -353,14 +354,16 @@ object Engine {
 								state.botStone, state.difficulty
 							)
 							
-							canContinue(movedState, coordTo) 
+							val s = canContinue(movedState, coordTo) 
+							Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+							s
 						
 						case None =>
-							Main.output(Console.RED + "Invalid move" + Console.RESET)
+							Functions.output(Console.RED + "Invalid move" + Console.RESET)
 							state
 					}
 				else
-					Main.output(Console.RED + "Invalid Play" + Console.RESET)
+					Functions.output(Console.RED + "Invalid Play" + Console.RESET)
 					state
 
 
@@ -384,7 +387,7 @@ object Engine {
 						
 						(newBoard, newPos) match {
 							case (Some(nb), Some(np)) =>
-								Main.output("Random move: " + np)
+								Functions.output("Random move: " + np)
 								val movedState = State(
 									nb, state.player, newOpen,
 									state.turn, newRand, state.startTime,
@@ -392,27 +395,33 @@ object Engine {
 									Some(state), scorer, Some(np), state.botStone,
 									state.difficulty
 								)
-								canContinue(movedState, np)
+								val s = canContinue(movedState, np)
+								Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+								s
 
 							case (Some(nb), None) =>
-								Main.output("Can't Continue")
-								State(
+								Functions.output("Can't Continue")
+								val s = State(
 									nb, Engine.oppositeStone(state.player),
 									newOpen, state.turn+1, newRand,
-									Main.getMillis(), state.duration, state.dimensions,
+									Functions.getMillis(), state.duration, state.dimensions,
 									Some(state), state.score, None, state.botStone,
 									state.difficulty
 								)
+								Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+								s
 							
 							case (None, _) =>
-								Main.output("Can't Continue")
-								State(
+								Functions.output("Can't Continue")
+								val s = State(
 									state.board, Engine.oppositeStone(state.player),
 									state.lstOpenCoords, state.turn + 1,
-									newRand, Main.getMillis(), state.duration,
+									newRand, Functions.getMillis(), state.duration,
 									state.dimensions, Some(state), state.score, 
 									None, state.botStone, state.difficulty
 								)
+								Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+								s
 										
 						}
 					case Difficulty.Hard => 
@@ -425,23 +434,27 @@ object Engine {
 									}.toList
 							}
 						if (src.isEmpty) {
-							State(
+							val s = State(
 								state.board, Engine.oppositeStone(state.player),
 								state.lstOpenCoords, state.turn + 1,
-								state.rand, Main.getMillis(), state.duration,
+								state.rand, Functions.getMillis(), state.duration,
 								state.dimensions, Some(state), state.score,
 								None, state.botStone, state.difficulty
 							)
+							Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+							s
 						} else {
 							val paths = src.map(from => getLongestPathPlay(state, from)).filter(_.nonEmpty)
 							if(paths.isEmpty){
-								State(
+								val s = State(
 									state.board, oppositeStone(state.player),
 									state.lstOpenCoords, state.turn+1,
-									state.rand, Main.getMillis(), state.duration,
+									state.rand, Functions.getMillis(), state.duration,
 									state.dimensions, Some(state), state.score,
 									None, state.botStone, state.difficulty
 								)
+								Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+								s
 							} else {
 								val bestP = paths.maxBy(_.size)
 								val (from, to) = bestP.head
@@ -464,7 +477,9 @@ object Engine {
 											Some(state), scorer, Some(to),
 											state.botStone, state.difficulty
 										)
-										canContinue(movedState,to)
+										val s = canContinue(movedState,to)
+										Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+										s
 
 									case None => state
 								}
@@ -562,7 +577,8 @@ object Engine {
 			*/
 
 			case "quit" => 
-				Main.doQuit()
+				Functions.writeInputAppend("state.txt", Functions.getStateToString(state))
+				Functions.doQuit() 
 				state
 
 
@@ -571,13 +587,15 @@ object Engine {
 				// através de uma recursão
 				def getFirstState(state: State): State = {
 					if state.oldState == None then
-						State(
+						val s = State(
 							state.board, state.player, state.lstOpenCoords,
-							state.turn, state.rand, Main.getMillis(),
+							state.turn, state.rand, Functions.getMillis(),
 							state.duration, state.dimensions, state.oldState,
 							state.score, state.coordPos,
 							state.botStone, state.difficulty
 						)
+						Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+						s
 					else
 						getFirstState(state.oldState.getOrElse(state))
 				}
@@ -585,22 +603,26 @@ object Engine {
 
 
 			case "change" =>
-				State(
+				val s = State(
 					state.board, Engine.oppositeStone(state.player),
 					state.lstOpenCoords, state.turn+1, state.rand,
-					Main.getMillis(), state.duration, state.dimensions,
+					Functions.getMillis(), state.duration, state.dimensions,
 					Some(state), state.score, None, state.botStone,
 					state.difficulty
 				)
+				Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+				s
 
 
 			case "undo" => 
-				state.oldState.getOrElse(state) // Validação para um possível erro de tipo
+				val s = state.oldState.getOrElse(state) // Validação para um possível erro de tipo
+				Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+				s
 			case None => 
-				Main.output(Console.RED + "Invalid command" + Console.RESET)
+				Functions.output(Console.RED + "Invalid command" + Console.RESET)
 				state
 			case _ => 
-				Main.output(Console.RED + "Not a known command" + Console.RESET)
+				Functions.output(Console.RED + "Not a known command" + Console.RESET)
 				state
 			
 		}

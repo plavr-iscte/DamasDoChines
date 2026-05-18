@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader
 import javafx.scene.{Parent, Scene}
 import javafx.stage.Stage
 
+import code.code.State
+
 class HelloWorld extends Application {
 
   override def start(primaryStage: Stage): Unit = {
@@ -33,6 +35,21 @@ object FxApp {
       else{
         stage.getScene.setRoot(sceneToLoad)
       }
+  }
+
+  def changeSceneWithState(filename: String, state: State): Unit = {
+    val loader = new FXMLLoader(getClass.getResource(s"/gui/$filename"))
+    val root = loader.load[javafx.scene.Parent]()
+
+    val c: Any = loader.getController 
+    c match {
+      case gc: Controller => gc.setInitialState(state)
+      case oc: OptionsController => oc.setInitialState(state)
+      case _ =>
+    }
+
+    stage.setScene(new Scene(root))
+    stage.show()
   }
 
   def main(args: Array[String]): Unit = {

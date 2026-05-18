@@ -10,8 +10,10 @@ import code.Main
 import code.Cli
 import code.Score
 import code.Board
+import code.Session
 import code.GameTick
 import code.Difficulty
+import code.Functions
 import javafx.fxml.FXML
 import javafx.scene.layout.{GridPane, StackPane}
 import code.Main.*
@@ -45,6 +47,12 @@ class Controller {
 	private var scaleAnim:Double =0
 	private var activeBtn:Option[Button] = None
 	private var scaleBtn:Double =0
+	private var session: Session = Session(None)
+
+	def setInitialState(s: State): Unit = {
+		gameState = s
+		changeGUI(gameState.board)
+	}
 
 	val anim:AnimationTimer = new AnimationTimer{
         def handle(now:Long):Unit = {
@@ -63,8 +71,8 @@ class Controller {
 
 
 	def initialize(): Unit = {
-		val rand = MyRandom(Main.getMillis())
-		val start = getMillis()
+		val rand = MyRandom(Functions.getMillis())
+		val start = Functions.getMillis()
 		val(initialBoard, r, lstopen) = initboard(6, 6, rand)
 		gameState = State(
 			initialBoard,
@@ -81,10 +89,14 @@ class Controller {
 			Stone.Black,
 			Difficulty.Hard,
 		)
-		l_id.setText(Main.getTitle(gameState))
+
+		Functions.writeInput("state.txt", Functions.getStateToString(gameState))
+
+
+		l_id.setText(Functions.getTitle(gameState))
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
 			override def handle(event: ActionEvent): Unit = {
-				Main.doQuit()
+				Functions.doQuit()
 			}
 		})
 		B_Undo.setOnAction(new EventHandler[ActionEvent] {
@@ -100,7 +112,7 @@ class Controller {
 
 				if(
 					gameState.player == gameState.botStone && 
-					!gameState.hasEndCondition(getMillis()) 
+					!gameState.hasEndCondition(Functions.getMillis()) 
 				) {
 					chainRandomPlayWithDelay()
 				}
@@ -207,7 +219,7 @@ class Controller {
 
 
 			square.setOnDragDropped(event => {				
-				if(gameState.hasEndCondition(getMillis())) {
+				if(gameState.hasEndCondition(Functions.getMillis())) {
 					event.consume()
 				}
 
@@ -235,7 +247,7 @@ class Controller {
 
 
 						changeGUI(gameState.board)
-						if (gameState.player == gameState.botStone && !gameState.hasEndCondition(getMillis())) {
+						if (gameState.player == gameState.botStone && !gameState.hasEndCondition(Functions.getMillis())) {
 							chainRandomPlayWithDelay()
 						}
 					}
@@ -262,7 +274,7 @@ class Controller {
 	}
 
 	def changeGUI(board: Board): Unit = {
-		l_id.setText(Main.getTitle(gameState))
+		l_id.setText(Functions.getTitle(gameState))
 		for(row <- 0 until 6; col <- 0 until 6) {
 			val square = getSquare(row, col)
 			if (square != null) {
@@ -308,7 +320,7 @@ class Controller {
 			gameState.difficulty != Difficulty.Easy &&
 			gameState.player == gameState.botStone &&
 			gameState.coordPos.isDefined &&
-			!gameState.hasEndCondition(getMillis())
+			!gameState.hasEndCondition(Functions.getMillis())
 		) {
 			chainRandomPlayWithDelay()
 		}

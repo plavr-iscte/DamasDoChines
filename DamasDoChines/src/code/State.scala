@@ -6,6 +6,7 @@ import code.code.MyRandom
 import code.code.Score
 import code.code.Stone
 import code.code.Engine.oppositeStone
+import code.code.Functions
 
 case class State(
     board:Board, //0
@@ -48,7 +49,7 @@ case class State(
     def changeTurn(): State =
         State(
             board, Engine.oppositeStone(player), lstOpenCoords,
-            turn+1, rand, Main.getMillis(),
+            turn+1, rand, Functions.getMillis(),
             duration, dimensions, oldState=Some(this),
             score, None, botStone, difficulty
         )

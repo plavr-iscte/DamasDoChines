@@ -64,7 +64,7 @@
                   </Button>
                </children>
             </HBox>
-            <TextField maxHeight="1.7976931348623157E308" styleClass="time_text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtField" maxHeight="1.7976931348623157E308" styleClass="time_text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
       <HBox layoutX="199.0" layoutY="342.0" prefHeight="43.0" prefWidth="202.0" spacing="40.0">
