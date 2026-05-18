@@ -268,6 +268,68 @@ object Engine {
 		}
 	}
 
+	def getLongestPathPlayWithDepth(
+		state: State,
+		current: Coord2D,
+		minPlays:Int,
+		pathmin:List[(Coord2D,Coord2D)],
+		path: List[(Coord2D, Coord2D)]=Nil
+	): (List[(Coord2D, Coord2D)],Int) = {
+
+		val nextMoves = {
+		moves(current).filter { c =>
+			play(state.board, state.player, current, c, state.lstOpenCoords)._1.nonEmpty
+		}
+		}
+
+		if(nextMoves.isEmpty){ (pathmin,minPlays) }
+		else {
+			val paths = nextMoves.map { next =>
+				val (b, o) = play(state.board, state.player, current, next, state.lstOpenCoords)
+				b match {
+				case Some(nb) =>
+					val newState = {
+					state.copy(
+						board = nb,
+						lstOpenCoords = o,
+					)
+					
+					}
+					val oponentPlays=countOpponentMoves(newState)
+					val (newMin, newPathMin) =
+					if (oponentPlays < minPlays)
+						(oponentPlays, path :+ (current, next))
+					else
+						(minPlays, pathmin)
+					getLongestPathPlayWithDepth(
+						newState,
+						next,
+						newMin,
+						newPathMin,
+						path:+ (current, next)
+					)
+				case None => (pathmin,minPlays)
+				}
+			}
+			paths.minBy(_._2)
+		}
+	}
+
+	def countOpponentMoves(state: State): Int = {
+		state.lstOpenCoords.map { c =>
+			moves(c).count { next =>
+			play(
+				state.board,
+				state.player,
+				next,
+				c,
+				state.lstOpenCoords
+			)._1.nonEmpty
+			}
+
+		}.sum
+	}
+
 	def moves(coor: Coord2D): List[Coord2D] = List(Coord2D(coor.x+2, coor.y), Coord2D(coor.x-2, coor.y), Coord2D(coor.x, coor.y+2), Coord2D(coor.x, coor.y-2))
 
 	def canContinue(state: State, from: Coord2D): State = {
@@ -485,8 +547,68 @@ object Engine {
 								}
 							}
 						}
-				}
+					case Difficulty.Extreme => 
+						val src: List[Coord2D] =
+							state.coordPos match {
+							case Some(forced) => List(forced)
+							case None =>
+								state.board.collect {
+								case (c, s) if s == state.player => c
+								}.toList
+							}
 
+						if (src.isEmpty) {
+							val s = State(
+								state.board, Engine.oppositeStone(state.player),
+								state.lstOpenCoords, state.turn + 1,
+								state.rand, Functions.getMillis(), state.duration,
+								state.dimensions, Some(state), state.score,
+								None, state.botStone, state.difficulty
+							)
+							Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+							s
+						} else {
+							val evaluated: List[(List[(Coord2D, Coord2D)], Int)] =
+							src.map(from => getLongestPathPlayWithDepth(state, from, Int.MaxValue, Nil))
+
+							val nonEmpty = evaluated.filter(_._1.nonEmpty)
+
+							if (nonEmpty.isEmpty) {
+								val s = State(
+									state.board, Engine.oppositeStone(state.player),
+									state.lstOpenCoords, state.turn + 1,
+									state.rand, Functions.getMillis(), state.duration,
+									state.dimensions, Some(state), state.score,
+									None, state.botStone, state.difficulty
+								)
+								Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+								s
+							} else {
+								val (bestPath, _) = nonEmpty.minBy(_._2)
+								val (from, to) = bestPath.head
+
+								val (newBoard, newOpen) =
+									play(state.board, state.player, from, to, state.lstOpenCoords)
+
+								newBoard match {
+									case Some(nb) =>
+									val movedState = State(
+										nb, state.player, newOpen,
+										state.turn, state.rand, state.startTime,
+										state.duration, state.dimensions,
+										Some(state), scorer, Some(to),
+										state.botStone, state.difficulty
+									)
+									val s = canContinue(movedState, to)
+									Functions.writeInputAppend("state.txt", Functions.getStateToString(s))
+									s
+
+									case None =>
+									state
+								}
+							}
+						}
+				}
 			/*case "pr-single" => 
 				if (state.player != state.botStone) state
 				else {

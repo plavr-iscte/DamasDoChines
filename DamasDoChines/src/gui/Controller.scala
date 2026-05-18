@@ -34,9 +34,11 @@ class Controller {
 	@FXML private var B_Quit: Button = _
 	@FXML private var B_Restart: Button = _
 	@FXML private var B_CTurn: Button = _
-	@FXML private var B_RMove: Button = _
 	@FXML private var B_Undo: Button = _
-	@FXML private var l_id: Label = _
+	@FXML private var turnL: Label = _
+	@FXML private var p_circle: Circle = _
+	@FXML private var b_score: Label = _
+	@FXML private var w_score: Label = _
 	private var mposx:Double =0
 	private var mposy:Double=0
 	private var stoneX:Double =0
@@ -52,6 +54,9 @@ class Controller {
 	def setInitialState(s: State): Unit = {
 		gameState = s
 		changeGUI(gameState.board)
+		turnL.setText(gameState.turn.toString)
+		b_score.setText(gameState.score.black.toString)
+		w_score.setText(gameState.score.white.toString)
 	}
 
 	val anim:AnimationTimer = new AnimationTimer{
@@ -71,29 +76,29 @@ class Controller {
 
 
 	def initialize(): Unit = {
-		val rand = MyRandom(Functions.getMillis())
-		val start = Functions.getMillis()
-		val(initialBoard, r, lstopen) = initboard(6, 6, rand)
-		gameState = State(
-			initialBoard,
-			Stone.White,
-			lstopen,
-			1,
-			r,
-			start,
-			start + 100 * 1000L,
-			(6, 6),
-			None,
-			Score(0, 0),
-			None,
-			Stone.Black,
-			Difficulty.Hard,
-		)
-
-		Functions.writeInput("state.txt", Functions.getStateToString(gameState))
+		if(gameState == null) {
+			val rand = MyRandom(Functions.getMillis())
+			val start = Functions.getMillis()
+			val (board, r, open) = initboard(6,6,rand)
+			gameState = State(
+				board, Stone.White, open, 1, r,
+				start, start+100*1000L, (6,6),
+				None, Score(0,0), None,
+				Stone.Black, Difficulty.Medium
+			)
+		}
 
 
-		l_id.setText(Functions.getTitle(gameState))
+		//l_id.setText(Functions.getTitle(gameState))
+
+		turnL.setText(""+gameState.turn)
+		gameState.player match {
+			case Stone.White => p_circle.getStyleClass.add("light_stone")
+			case Stone.Black => p_circle.getStyleClass.add("dark_stone")
+		}
+		b_score.setText(""+gameState.score.black)
+		w_score.setText(""+gameState.score.white)
+
 		B_Quit.setOnAction(new EventHandler[ActionEvent] {
 			override def handle(event: ActionEvent): Unit = {
 				Functions.doQuit()
@@ -124,12 +129,8 @@ class Controller {
 				changeGUI(gameState.board)
 			}
 		})
-		B_RMove.setOnAction(new EventHandler[ActionEvent] {
-			override def handle(event: ActionEvent): Unit = {
-				gameState = getNextState(gameState, getCommand("", "pr"))
-				changeGUI(gameState.board)
-			}
-		})
+
+		
 		for (row <- 0 until 6; col <- 0 until 6) {
 			val square = new StackPane()
 
@@ -274,7 +275,6 @@ class Controller {
 	}
 
 	def changeGUI(board: Board): Unit = {
-		l_id.setText(Functions.getTitle(gameState))
 		for(row <- 0 until 6; col <- 0 until 6) {
 			val square = getSquare(row, col)
 			if (square != null) {
@@ -291,6 +291,9 @@ class Controller {
 				}
 			}
 		}
+		turnL.setText(gameState.turn.toString)
+		b_score.setText(gameState.score.black.toString)
+		w_score.setText(gameState.score.white.toString)
 	}
 
 

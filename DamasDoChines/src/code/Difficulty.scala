@@ -4,4 +4,5 @@ enum Difficulty {
   case Easy
   case Medium
   case Hard
+  case Extreme
 }

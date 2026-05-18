@@ -31,8 +31,8 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="63.0" prefWidth="302.0" spacing="70.0" styleClass="button-box" GridPane.columnIndex="1">
                <children>
-                  <Circle fill="DODGERBLUE" radius="20.0" fx:id="whiteP" stroke="BLACK" strokeType="INSIDE" styleClass="light_stone" />
-                  <Circle fill="DODGERBLUE" radius="20.0" fx:id="blackP" stroke="BLACK" strokeType="INSIDE" styleClass="dark_stone" />
+                  <Circle fx:id="whiteP" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" styleClass="light_stone" />
+                  <Circle fx:id="blackP" fill="DODGERBLUE" radius="20.0" stroke="BLACK" strokeType="INSIDE" styleClass="dark_stone" />
                </children>
             </HBox>
             <Label styleClass="sub_text" text="Tempo por Jogada" GridPane.rowIndex="1">
@@ -47,21 +47,10 @@
             </Label>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" styleClass="button-box" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <Button mnemonicParsing="false" styleClass="buttons" fx:id="easybtn" text="Fácil" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button mnemonicParsing="false" styleClass="buttons" fx:id="midbtn" text="Média" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
-                  <Button mnemonicParsing="false" styleClass="buttons" fx:id="hardbtn" text="Difícil" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Button>
+                  <Circle fx:id="easyD" fill="#44ea44" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="diff_stone" />
+                  <Circle fx:id="midD" fill="#f4f134" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="diff_stone" />
+                  <Circle fx:id="hardD" fill="#f4901e" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="diff_stone" />
+                  <Circle fx:id="extremeD" fill="#dc5433" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="diff_stone" />
                </children>
             </HBox>
             <TextField fx:id="txtField" maxHeight="1.7976931348623157E308" styleClass="time_text" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -69,12 +58,12 @@
       </GridPane>
       <HBox layoutX="199.0" layoutY="342.0" prefHeight="43.0" prefWidth="202.0" spacing="40.0">
          <children>
-            <Button mnemonicParsing="false" styleClass="buttons" fx:id="prevbtn" text="Voltar" textFill="WHITE">
+            <Button fx:id="prevbtn" mnemonicParsing="false" styleClass="buttons" text="Voltar" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" styleClass="buttons" fx:id="nextbtn" text="Avançar" textFill="WHITE">
+            <Button fx:id="nextbtn" mnemonicParsing="false" styleClass="buttons" text="Avançar" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
