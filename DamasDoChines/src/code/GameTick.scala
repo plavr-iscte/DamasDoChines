@@ -16,14 +16,19 @@ case class GameTick () {
         client.showBoard(state.board, state.lstOpenCoords, state.dimensions._1, state.dimensions._2)
         
         if (!state.hasEndCondition(millis)) {
-            Functions.output(Console.BLUE + "Turn " + state.turn + Console.RESET)
+            Functions.output(Console.BLUE + "Turn " + state.turn + Console.RESET + " Player: " + state.player.toString)
+            Functions.output(Console.GREEN + "Difficulty: " + state.difficulty + Console.RESET + "\n")
 
 
             //Esperar user response
+            if (state.player != state.botStone){
+                val nextState = Engine.getNextState(state, getCommand("Choose: 'play [fromY] [fromX] [toX] [toY]' or 'undo' or 'quit'", ""))
+                onTick(nextState)
+            } else {
+                val nextState = Engine.getNextState(state, getCommand("", "pr"))
+                onTick(nextState)
+            }
             
-            val nextState = Engine.getNextState(state, getCommand("Choose: 'play' or 'undo' or 'quit' or 'pr'", ""))
-            
-            onTick(nextState)
         } else {
             Functions.output(Functions.getTitle(state))
         }
